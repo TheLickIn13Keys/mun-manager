@@ -10,6 +10,8 @@ import app.bardia.mun.views.conferences.ConferencesView;
 import app.bardia.mun.views.delegateinfo.DelegateInfoView;
 import app.bardia.mun.views.members.MembersView;
 import app.bardia.mun.views.welcome.WelcomeView;
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.avatar.Avatar;
@@ -27,10 +29,19 @@ import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.server.StreamResource;
+import com.vaadin.flow.server.VaadinServletRequest;
 import com.vaadin.flow.server.auth.AccessAnnotationChecker;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import java.io.ByteArrayInputStream;
+import java.util.Collection;
+import java.util.Map;
 import java.util.Optional;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.core.OAuth2AuthenticatedPrincipal;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 /**
@@ -40,11 +51,19 @@ public class MainLayout extends AppLayout {
 
     private H2 viewTitle;
 
-    private AuthenticatedUser authenticatedUser;
+    private OAuth2AuthenticatedPrincipal authenticatedUser;
     private AccessAnnotationChecker accessChecker;
 
     public MainLayout(AuthenticatedUser authenticatedUser, AccessAnnotationChecker accessChecker) {
-        this.authenticatedUser = authenticatedUser;
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication.getPrincipal() instanceof OAuth2AuthenticatedPrincipal) {
+            OAuth2AuthenticatedPrincipal principal = (OAuth2AuthenticatedPrincipal) authentication.getPrincipal();
+            this.authenticatedUser = principal;
+        }
+        else{
+            this.authenticatedUser = null;
+        }
         this.accessChecker = accessChecker;
 
         setPrimarySection(Section.DRAWER);
@@ -116,13 +135,14 @@ public class MainLayout extends AppLayout {
     private Footer createFooter() {
         Footer layout = new Footer();
 
-        Optional<User> maybeUser = authenticatedUser.get();
-        if (maybeUser.isPresent()) {
-            User user = maybeUser.get();
+        //Optional<User> maybeUser = authenticatedUser.get();
+        if (authenticatedUser != null) {
+        //User user = maybeUser.get();
 
-            Avatar avatar = new Avatar(user.getName());
+            Avatar avatar = new Avatar(authenticatedUser.getAttribute("given_name"));
+            System.out.println("haiiii " + authenticatedUser.getAttribute("picture").toString());
             StreamResource resource = new StreamResource("profile-pic",
-                    () -> new ByteArrayInputStream(user.getProfilePicture()));
+                    () -> new ByteArrayInputStream(authenticatedUser.getAttribute("picture")));
             avatar.setImageResource(resource);
             avatar.setThemeName("xsmall");
             avatar.getElement().setAttribute("tabindex", "-1");
@@ -133,17 +153,21 @@ public class MainLayout extends AppLayout {
             MenuItem userName = userMenu.addItem("");
             Div div = new Div();
             div.add(avatar);
-            div.add(user.getName());
+            //div.add();
             div.add(new Icon("lumo", "dropdown"));
             div.getElement().getStyle().set("display", "flex");
             div.getElement().getStyle().set("align-items", "center");
             div.getElement().getStyle().set("gap", "var(--lumo-space-s)");
             userName.add(div);
             userName.getSubMenu().addItem("Sign out", e -> {
-                authenticatedUser.logout();
+                UI.getCurrent().getPage().setLocation("/");
+                SecurityContextLogoutHandler logoutHandler = new SecurityContextLogoutHandler();
+                logoutHandler.logout(
+                        VaadinServletRequest.getCurrent().getHttpServletRequest(), null,
+                        null);
             });
 
-            layout.add(userMenu);
+                layout.add(userMenu);
         } else {
             Anchor loginLink = new Anchor("login", "Sign in");
             layout.add(loginLink);
