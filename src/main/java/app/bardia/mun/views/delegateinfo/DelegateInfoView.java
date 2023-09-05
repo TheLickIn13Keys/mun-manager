@@ -1,99 +1,130 @@
 package app.bardia.mun.views.delegateinfo;
 
+import app.bardia.mun.data.entity.User;
+import app.bardia.mun.data.service.SamplePersonService;
+import app.bardia.mun.data.service.UserService;
 import app.bardia.mun.views.MainLayout;
-import com.vaadin.flow.component.Composite;
+import app.bardia.mun.data.entity.SamplePerson;
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.combobox.ComboBox;
+import com.vaadin.flow.component.customfield.CustomField;
 import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.dependency.Uses;
+import com.vaadin.flow.component.formlayout.FormLayout;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
-import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
 import jakarta.annotation.security.PermitAll;
 
 @PageTitle("Delegate Info")
 @Route(value = "delegate-info", layout = MainLayout.class)
 @PermitAll
 @Uses(Icon.class)
-public class DelegateInfoView extends Composite<VerticalLayout> {
+public class DelegateInfoView extends Div {
 
-    public DelegateInfoView() {
-        HorizontalLayout layoutRow = new HorizontalLayout();
-        VerticalLayout layoutColumn5 = new VerticalLayout();
-        VerticalLayout layoutColumn2 = new VerticalLayout();
-        H3 h3 = new H3();
-        HorizontalLayout layoutRow2 = new HorizontalLayout();
-        VerticalLayout layoutColumn3 = new VerticalLayout();
-        TextField textField = new TextField();
-        DatePicker datePicker = new DatePicker();
-        EmailField emailField = new EmailField();
-        VerticalLayout layoutColumn4 = new VerticalLayout();
-        TextField textField2 = new TextField();
-        HorizontalLayout layoutRow3 = new HorizontalLayout();
-        TextField textField3 = new TextField();
-        TextField textField4 = new TextField();
-        HorizontalLayout layoutRow4 = new HorizontalLayout();
-        Button buttonPrimary = new Button();
-        Button buttonSecondary = new Button();
-        VerticalLayout layoutColumn6 = new VerticalLayout();
-        getContent().setWidthFull();
-        getContent().addClassName(Padding.LARGE);
-        layoutRow.setWidthFull();
-        layoutRow.setFlexGrow(1.0, layoutColumn5);
-        layoutColumn5.setWidth(null);
-        layoutRow.setFlexGrow(1.0, layoutColumn2);
-        layoutColumn2.setWidth(null);
-        h3.setText("Personal Information");
-        layoutRow2.setWidthFull();
-        layoutRow2.addClassName(Gap.LARGE);
-        layoutRow2.setFlexGrow(1.0, layoutColumn3);
-        layoutColumn3.setWidth(null);
-        textField.setLabel("First Name");
-        textField.setWidthFull();
-        datePicker.setLabel("Birthday");
-        datePicker.setWidthFull();
-        emailField.setLabel("Email");
-        emailField.setWidthFull();
-        layoutRow2.setFlexGrow(1.0, layoutColumn4);
-        layoutColumn4.setWidth(null);
-        textField2.setLabel("Last Name");
-        textField2.setWidthFull();
-        layoutRow3.addClassName(Gap.MEDIUM);
-        layoutRow3.setWidthFull();
-        textField3.setLabel("Phone Number");
-        layoutRow3.setFlexGrow(1.0, textField3);
-        textField4.setLabel("Occupation");
-        textField4.setWidthFull();
-        layoutRow4.addClassName(Gap.MEDIUM);
-        buttonPrimary.setText("Save");
-        buttonPrimary.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
-        buttonSecondary.setText("Cancel");
-        layoutRow.setFlexGrow(1.0, layoutColumn6);
-        layoutColumn6.setWidth(null);
-        getContent().add(layoutRow);
-        layoutRow.add(layoutColumn5);
-        layoutRow.add(layoutColumn2);
-        layoutColumn2.add(h3);
-        layoutColumn2.add(layoutRow2);
-        layoutRow2.add(layoutColumn3);
-        layoutColumn3.add(textField);
-        layoutColumn3.add(datePicker);
-        layoutColumn3.add(emailField);
-        layoutRow2.add(layoutColumn4);
-        layoutColumn4.add(textField2);
-        layoutColumn4.add(layoutRow3);
-        layoutRow3.add(textField3);
-        layoutColumn4.add(textField4);
-        layoutColumn2.add(layoutRow4);
-        layoutRow4.add(buttonPrimary);
-        layoutRow4.add(buttonSecondary);
-        layoutRow.add(layoutColumn6);
+    private TextField firstName = new TextField("First name");
+    private TextField lastName = new TextField("Last name");
+    private EmailField email = new EmailField("Email address");
+    private DatePicker dateOfBirth = new DatePicker("Birthday");
+    private PhoneNumberField phone = new PhoneNumberField("Phone number");
+    private TextField occupation = new TextField("Occupation");
+
+    private Button cancel = new Button("Cancel");
+    private Button save = new Button("Save");
+
+    private Binder<User> binder = new Binder<>(User.class);
+
+    public DelegateInfoView(UserService userService) {
+        addClassName("delegate-info-view");
+
+        add(createTitle());
+        add(createFormLayout());
+        add(createButtonLayout());
+
+        binder.bindInstanceFields(this);
+        clearForm();
+
+        cancel.addClickListener(e -> clearForm());
+        save.addClickListener(e -> {
+            userService.update(binder.getBean());
+            Notification.show(binder.getBean().getClass().getSimpleName() + " details stored.");
+            clearForm();
+        });
     }
+
+    private void clearForm() {
+        binder.setBean(new User());
+    }
+
+    private Component createTitle() {
+        return new H3("Personal information");
+    }
+
+    private Component createFormLayout() {
+        FormLayout formLayout = new FormLayout();
+        email.setErrorMessage("Please enter a valid email address");
+        formLayout.add(firstName, lastName, dateOfBirth, phone, email, occupation);
+        return formLayout;
+    }
+
+    private Component createButtonLayout() {
+        HorizontalLayout buttonLayout = new HorizontalLayout();
+        buttonLayout.addClassName("button-layout");
+        save.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        buttonLayout.add(save);
+        buttonLayout.add(cancel);
+        return buttonLayout;
+    }
+
+    private static class PhoneNumberField extends CustomField<String> {
+        private ComboBox<String> countryCode = new ComboBox<>();
+        private TextField number = new TextField();
+
+        public PhoneNumberField(String label) {
+            setLabel(label);
+            countryCode.setWidth("120px");
+            countryCode.setPlaceholder("Country");
+            countryCode.setAllowedCharPattern("[\\+\\d]");
+            countryCode.setItems("+354", "+91", "+62", "+98", "+964", "+353", "+44", "+972", "+39", "+225");
+            countryCode.addCustomValueSetListener(e -> countryCode.setValue(e.getDetail()));
+            number.setAllowedCharPattern("\\d");
+            HorizontalLayout layout = new HorizontalLayout(countryCode, number);
+            layout.setFlexGrow(1.0, number);
+            add(layout);
+        }
+
+        @Override
+        protected String generateModelValue() {
+            if (countryCode.getValue() != null && number.getValue() != null) {
+                String s = countryCode.getValue() + " " + number.getValue();
+                return s;
+            }
+            return "";
+        }
+
+        @Override
+        protected void setPresentationValue(String phoneNumber) {
+            String[] parts = phoneNumber != null ? phoneNumber.split(" ", 2) : new String[0];
+            if (parts.length == 1) {
+                countryCode.clear();
+                number.setValue(parts[0]);
+            } else if (parts.length == 2) {
+                countryCode.setValue(parts[0]);
+                number.setValue(parts[1]);
+            } else {
+                countryCode.clear();
+                number.clear();
+            }
+        }
+    }
+
 }

@@ -2,14 +2,9 @@ package app.bardia.mun.data.entity;
 
 import app.bardia.mun.data.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Column;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.Lob;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,6 +21,11 @@ public class User extends AbstractEntity {
     @Lob
     @Column(length = 1000000)
     private byte[] profilePicture;
+    private boolean isActive;
+    private String email;
+    private int consecutiveAbsences;
+    @OneToMany
+    private List<Conference> conferencesRegistered;
 
     public String getUsername() {
         return username;
@@ -57,5 +57,12 @@ public class User extends AbstractEntity {
     public void setProfilePicture(byte[] profilePicture) {
         this.profilePicture = profilePicture;
     }
-
+    public void setActive(boolean active) { isActive = active; }
+    public boolean isActive() { return isActive; }
+    public String getEmail() { return email;}
+    public void setEmail(String email) { this.email = email; }
+    public int getConsecutiveAbsences() { return consecutiveAbsences; }
+    public void setConsecutiveAbsences(int consecutiveAbsences) { this.consecutiveAbsences = consecutiveAbsences; }
+    public List<Conference> getConferencesRegistered() { return conferencesRegistered; }
+    public void setConferencesRegistered(List<Conference> conferencesRegistered) { this.conferencesRegistered = conferencesRegistered; }
 }
