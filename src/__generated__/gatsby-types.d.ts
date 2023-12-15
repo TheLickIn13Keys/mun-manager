@@ -608,7 +608,6 @@ type ConferenceAwardsData = Node & {
   readonly delegationAward: Maybe<Scalars['String']>;
   readonly delegateAwards: Maybe<ReadonlyArray<Maybe<ConferenceAwardsData__DelegateAwards>>>;
   readonly imageURL: Maybe<Scalars['String']>;
-  readonly serverId: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly parent: Maybe<Node>;
   readonly children: ReadonlyArray<Node>;
@@ -886,7 +885,6 @@ type Query_conferenceAwardsDataArgs = {
   delegationAward: Maybe<StringQueryOperatorInput>;
   delegateAwards: Maybe<ConferenceAwardsData__DelegateAwardsFilterListInput>;
   imageURL: Maybe<StringQueryOperatorInput>;
-  serverId: Maybe<StringQueryOperatorInput>;
   id: Maybe<StringQueryOperatorInput>;
   parent: Maybe<NodeFilterInput>;
   children: Maybe<NodeFilterListInput>;
@@ -3097,7 +3095,6 @@ type ConferenceAwardsDataFieldsEnum =
   | 'delegateAwards.type'
   | 'delegateAwards.awards'
   | 'imageURL'
-  | 'serverId'
   | 'id'
   | 'parent.id'
   | 'parent.parent.id'
@@ -3241,7 +3238,6 @@ type ConferenceAwardsDataFilterInput = {
   readonly delegationAward: Maybe<StringQueryOperatorInput>;
   readonly delegateAwards: Maybe<ConferenceAwardsData__DelegateAwardsFilterListInput>;
   readonly imageURL: Maybe<StringQueryOperatorInput>;
-  readonly serverId: Maybe<StringQueryOperatorInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
   readonly parent: Maybe<NodeFilterInput>;
   readonly children: Maybe<NodeFilterListInput>;
@@ -3252,6 +3248,11 @@ type ConferenceAwardsDataSortInput = {
   readonly fields: Maybe<ReadonlyArray<Maybe<ConferenceAwardsDataFieldsEnum>>>;
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
+
+type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
 
 type awardsPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3313,16 +3314,6 @@ type Unnamed_4_QueryVariables = Exact<{ [key: string]: never; }>;
 
 type Unnamed_4_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
-type Unnamed_5_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_5_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
-
-type Unnamed_6_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_6_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
-
 type SFMUNPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3333,20 +3324,25 @@ type SFMUNRegisterPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 type SFMUNRegisterPageQueryQuery = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
-type Unnamed_7_QueryVariables = Exact<{ [key: string]: never; }>;
+type Unnamed_5_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type Unnamed_7_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+type Unnamed_5_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
 type SMUNCRegisterPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type SMUNCRegisterPageQueryQuery = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
-type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+type Unnamed_6_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+type Unnamed_6_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+
+type Unnamed_7_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type Unnamed_7_Query = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
 type Unnamed_8_QueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3363,15 +3359,15 @@ type Unnamed_10_QueryVariables = Exact<{ [key: string]: never; }>;
 
 type Unnamed_10_Query = { readonly thumbnail: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
-type AuthLayoutQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AuthLayoutQueryQuery = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
-
 type Unnamed_11_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type Unnamed_11_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
+
+type AuthLayoutQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AuthLayoutQueryQuery = { readonly headerImage: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
 
 type Unnamed_12_QueryVariables = Exact<{ [key: string]: never; }>;
 

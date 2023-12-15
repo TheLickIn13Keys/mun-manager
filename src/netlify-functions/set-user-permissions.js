@@ -5,7 +5,7 @@ const admin = require("firebase-admin");
 if (admin.apps.length === 0) {
 	admin.initializeApp({
 		credential: admin.credential.cert(FB_SERVICE_ACCOUNT),
-		databaseURL: "https://montavistamodelun.firebaseio.com",
+		databaseURL: "https://dublinhighmun.firebaseio.com",
 	});
 }
 export async function handler(event, context) {

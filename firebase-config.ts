@@ -1,10 +1,10 @@
 export default {
-	apiKey: "AIzaSyBWMDJuw8guseH3qsviCkvzxfYFdnSPARA",
-	authDomain: "montavistamodelun.firebaseapp.com",
-	databaseURL: "https://montavistamodelun.firebaseio.com",
-	projectId: "montavistamodelun",
-	storageBucket: "montavistamodelun.appspot.com",
-	messagingSenderId: "796706186483",
-	appId: "1:796706186483:web:7f1a5719c9534d6e144386",
-	measurementId: "G-ZBEJWZ4C3K",
+	apiKey: "AIzaSyCNbD_AgILDvOE-0NIe7XDj-pdqWxPHD_s",
+	authDomain: "dublinhighmun.firebaseapp.com",
+	databaseURL: "https://dublinhighmun.firebaseio.com",
+	projectId: "dublinhighmun",
+	storageBucket: "dublinhighmun.appspot.com",
+	messagingSenderId: "28695524953",
+	appId: "1:28695524953:web:5d61705e1db4ef9cc36348",
+	measurementId: "G-G3SMHJPF98"
 };

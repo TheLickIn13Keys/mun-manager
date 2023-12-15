@@ -40,7 +40,7 @@ exports.sourceNodes = async ({
 		const FB_SERVICE_ACCOUNT = JSON.parse(process.env.FB_SERVICE_ACCOUNT);
 		admin.initializeApp({
 			credential: admin.credential.cert(FB_SERVICE_ACCOUNT),
-			databaseURL: "https://montavistamodelun.firebaseio.com",
+			databaseURL: "https://dublinhighmun.firebaseio.com",
 		});
 		const snapshot = await admin.firestore().collection("awards").get();
 		snapshot.forEach((doc) => {
