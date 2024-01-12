@@ -25,6 +25,7 @@
 		"fix:lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx . --fix",
 		"fix:prettier": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
 		"functions:build": "netlify-lambda build --config ./src/netlify-functions/config/webpack.functions.js src/netlify-functions",
+		"functions:serve": "netlify-lambda serve --config ./src/netlify-functions/config/webpack.functions.js src/netlify-functions",
 		"functions:install": "netlify-lambda install src/netlify-functions",
 		"postinstall": "patch-package",
 		"lint": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx --cache .",

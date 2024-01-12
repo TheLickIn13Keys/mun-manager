@@ -17,7 +17,7 @@ export default function MembersPage(): React.ReactElement {
 		() => new Set()
 	);
 	const [loadingUsers, setLoadingUsers] = useState(true);
-
+	const [showDisabled, setShowDisabled] = useState(false);
 	const firebase = useFirebase();
 	const {
 		user,
@@ -265,7 +265,7 @@ export default function MembersPage(): React.ReactElement {
 		// "SFMUN Registration",
 		"Permissions",
 	];
-	const [showDisabled, setShowDisabled] = useState(false);
+	
 	return (
 		<AdminLayout title={"Members"}>
 			<h1

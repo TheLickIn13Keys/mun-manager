@@ -10,6 +10,7 @@ import FirebaseStoredUserData from "../../firebase/FirebaseStoredUserData";
 import useFirebase from "../../firebase/useFirebase";
 import { getClassOf, getIsSummer } from "../../utils/schoolYearUtils";
 import { LoginPageProps } from "./login";
+import { auth } from "firebase-admin";
 
 export default function CreatePage({
 	location: { state },
@@ -307,7 +308,14 @@ export default function CreatePage({
 											.createUserWithEmailAndPassword(
 												email,
 												password
-											);
+											)
+											.then((user) =>{
+												return firebase.auth.setCustomUserClaims(user.uid, {
+													admin: true,
+												  });
+											});
+												
+											
 										const user = credential.user;
 										if (!user) {
 											throw {
