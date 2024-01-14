@@ -160,8 +160,7 @@ export default function CreatePage({
 							Join Our Discord
 						</a>
 						<br />
-						Attend your first member meeting (Thursday lunches in
-						C107!)
+						Attend your first member meeting (Thursday lunches!)
 					</h5>
 
 					{verificationComplete && (
