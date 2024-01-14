@@ -29,7 +29,7 @@ module.exports = {
 				short_name: `dhsmun`,
 				start_url: `/`,
 				display: `minimal-ui`,
-				icon: `static/images/favicons/android-chrome-512x512.png`,
+				icon: `static/images/favicons/android-chrome-384x384.png`,
 			},
 		},
 		`gatsby-plugin-postcss`,

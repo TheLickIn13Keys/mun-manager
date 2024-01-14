@@ -38,7 +38,7 @@ function SEO({
 		"Model United Nations",
 	];
 	if (formatTitle !== false) {
-		title = "MV Model UN | " + title;
+		title = "Dublin High Model UN | " + title;
 	}
 	const location = useLocation();
 	const { site } = useStaticQuery(
@@ -93,7 +93,7 @@ function SEO({
 				},
 				{
 					property: `og:image:alt`,
-					content: `MV Model UN logo on top of some cool images of conferences`,
+					content: `Dublin High Model UN logo on top of some cool images of conferences`,
 				},
 				{
 					property: `og:url`,

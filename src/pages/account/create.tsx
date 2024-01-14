@@ -91,7 +91,7 @@ export default function CreatePage({
 		<AuthLayout
 			title={"Join DHSMUN"}
 			description={
-				"Dublin High Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences. Join MV Model UN today to start your MUN journey!"
+				"Dublin High Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences. Join Dublin High Model UN today to start your MUN journey!"
 			}
 		>
 			{done ? (
