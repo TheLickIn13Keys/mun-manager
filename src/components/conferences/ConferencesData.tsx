@@ -4,7 +4,7 @@ export default [
 	 	date: "October 21, 2023",
 	 	location: "Henry M. Gunn High School",
 	 	acronym: "gmunc",
-	 	text: `Gunn Model United Nations Conference is our first conference of the year, and the one where we always take the most novices too. Fun fact: Dublin High won the Best Delegation award at GMUNC for 3 years in a row!`,
+	 	text: `Gunn Model United Nations Conference is our first conference of the year, and the one where we always take the most novices too.`,
 		//registration: "https://docs.google.com/forms/d/1koPXq06Gys8j8nLwvW6ilxE6U-avNnudD7ou9rMTaIc/",
 		//registrationText: "Application deadline 9/21",
 	},
@@ -78,10 +78,10 @@ export default [
 	{
 		name: "South Bay Model United Nations",
 		date: "TBD",
-		location: "Dublin High High School",
+		location: "Monta Vista High School",
 		acronym: "sbmun",
 		text:
-			"Co-hosted by Homestead and Dublin High HS",
+			"Co-hosted by Homestead and Monta Vista HS",
 		// registration: "/conferences/sbmun/register",
 	},
 	{
