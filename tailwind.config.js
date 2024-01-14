@@ -54,6 +54,20 @@ module.exports = {
 				},
 			},
 		}),
+		theme: {
+			colors: {
+			  transparent: 'transparent',
+			  current: 'currentColor',
+			  black: colors.black,
+			  white: colors.white,
+			  gray: colors.gray,
+			  emerald: colors.emerald,
+			  indigo: colors.sky,
+			  yellow: colors.yellow,
+			  blue: colors.sky,
+			  sky: colors.sky,
+			},
+		},
 	},
 	variants: {},
 	plugins: [

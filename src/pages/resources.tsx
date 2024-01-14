@@ -50,7 +50,7 @@ export default function ResourcesPage(): React.ReactElement {
 						Member Resources
 					</h1>
 					<p className={"mt-4 mb-4"}>
-						Please do not share these resources outside of MVMUN.
+						Please do not share these resources outside of DHSMUN.
 					</p>
 					{!hasPermission && (
 						<p>
@@ -59,7 +59,7 @@ export default function ResourcesPage(): React.ReactElement {
 							days after your first member meeting of the year. If
 							you've already attended a meeting this year, please{" "}
 							<a
-								href="mailto:support@montavistamun.com"
+								href="mailto:dublinhighmodelun@gmail.com"
 								className="link"
 							>
 								send us an email

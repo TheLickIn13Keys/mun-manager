@@ -1,4 +1,4 @@
-# Monta Vista Model United Nations Club
+# Dublin High Model United Nations Club
 
 ### Development
 

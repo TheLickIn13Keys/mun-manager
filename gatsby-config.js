@@ -5,8 +5,8 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
 	siteMetadata: {
-		title: `Monta Vista Model United Nations`,
-		description: `Monta Vista Model United Nations Club Website`,
+		title: `Dublin High Model United Nations`,
+		description: `Dublin High School Model United Nations Club Website`,
 		author: `@jeffreymeng`,
 	},
 	plugins: [
@@ -25,8 +25,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `montavistamun`,
-				short_name: `mvmun`,
+				name: `dublinhighmun`,
+				short_name: `dhsmun`,
 				start_url: `/`,
 				display: `minimal-ui`,
 				icon: `static/images/favicons/android-chrome-512x512.png`,

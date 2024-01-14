@@ -12,7 +12,7 @@ function ExpandableBio({
 			{pre}
 			<button
 				className={
-					"py-3 my-2 md:my-1 md:py-1 px-4 md:px-1 rounded-md bg-indigo-500 active:bg-indigo-600 md:active:bg-white md:bg-white md:underline text-indigo-50 md:text-indigo-500 active:text-indigo-800"
+					"py-3 my-2 md:my-1 md:py-1 px-4 md:px-1 rounded-md bg-blue-500 active:bg-blue-600 md:active:bg-white md:bg-white md:underline text-blue-50 md:text-blue-500 active:text-blue-800"
 				}
 				onFocus={(e) => e.target.blur()}
 				onClick={() => setExpanded((old) => !old)}
@@ -25,17 +25,13 @@ function ExpandableBio({
 }
 export default [
 	{
-		name: "Charlotte Zhou",
+		name: "Bardia Anvari",
 		position: "President",
 		bio: (
 			<>
-			Hi, I’m Charlotte and I am MVMUN’s co-president this year! I’m currently a 
-			junior and joined MVMUN in freshman year. Through MUN, I got the opportunity 
-			to really put myself out there and cultivate lifelong public speaking, 
-			negotiation, and leadership skills, and it’s an experience I’d recommend to 
-			anyone! Aside from MUN, I’m interested in art and the sciences. Feel free to 
-			reach out to me whenever you want for any questions, concerns, or just to 
-			talk. I’m looking forward to another exciting year!	
+			Hi, I’m Bardia and I am president of Dublin High MUN this year! I've been doing MUN since Freshman year and haven't looked back since! My favorite part of MUN
+			is definitely the people. I've met so many amazing people through MUN and I'm so grateful for the community that MUN has given me.
+			Outside of MUN, I like playing jazz, writing code, and reading political theory. I'm looking forward to meeting all of you this year!
 			</>
 		),
 		memeBioNickname: "",

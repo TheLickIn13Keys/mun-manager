@@ -46,7 +46,7 @@ export async function handler(event, context) {
 		};
 	}
 	try {
-		const listID = "3bb1f12a14";
+		const listID = "1b24e05585";
 		let emailHash = crypto
 			.createHash("md5")
 			.update(email.toLowerCase())

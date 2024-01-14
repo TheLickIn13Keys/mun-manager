@@ -27,13 +27,13 @@ function SEO({
 	lang = lang || "en";
 	description =
 		description ||
-		"Monta Vista Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences.";
+		"Dublin High Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences.";
 	meta = meta || [];
 	keywords = keywords || [
 		"Cupertino",
 		"Model UN",
 		"MUN",
-		"Monta Vista",
+		"Dublin High",
 		"Club",
 		"Model United Nations",
 	];

@@ -1,14 +1,14 @@
 {
-	"name": "montavistamun",
-	"description": "Monta Vista Model United Nations Club Website",
+	"name": "munmanager",
+	"description": "Dublin High Model United Nations Club Website",
 	"license": "MIT",
-	"author": "Jeffrey Meng <jeffkmeng@gmail.com>",
+	"author": "Bardia Anvari <contact@bardia.app>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jeffreymeng/montavistamun"
+		"url": "https://github.com/TheLickIn13Keys/mun-manager"
 	},
 	"bugs": {
-		"url": "https://github.com/jeffreymeng/montavistamun/issues"
+		"url": "https://github.com/TheLickIn13Keys/mun-manager/issues"
 	},
 	"version": "2.0.0",
 	"scripts": {

@@ -64,7 +64,7 @@ export default function AwardsPage(): React.ReactElement {
 	return (
 		<Layout title={"Awards"} className={"bg-gray-50"}>
 			<Header title={"Awards"} backgroundImage={headerImage}>
-				{""}
+				{"The awards won by Dublin High MUN delegates in the past year!"}
 			</Header>
 			<Main wide>
 				<SpotlightConference data={awardsData[highlightIndex]} />
@@ -109,7 +109,7 @@ export function SpotlightConference({
 			{data.delegationAward && (
 				<p
 					className={
-						"text-lg md:text-xl lg:text-2xl text-indigo-600 font-bold italic pb-3"
+						"text-lg md:text-xl lg:text-2xl text-blue-600 font-bold italic pb-3"
 					}
 				>
 					{data.delegationAward}
@@ -177,7 +177,7 @@ export function ConferenceAwardCard({
 		<div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
 			<div className="flex-1 bg-white p-6 flex flex-col justify-between">
 				<div className="flex-1">
-					<p className="text-sm leading-5 font-medium text-indigo-600">
+					<p className="text-sm leading-5 font-medium text-blue-600">
 						{month + " " + year}
 					</p>
 					<h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
@@ -187,7 +187,7 @@ export function ConferenceAwardCard({
 						{delegationAward && (
 							<p
 								className={
-									"text-lg text-indigo-600 font-bold italic pb-3"
+									"text-lg text-blue-600 font-bold italic pb-3"
 								}
 							>
 								{delegationAward}

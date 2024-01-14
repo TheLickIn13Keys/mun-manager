@@ -32,7 +32,7 @@ export default function AboutPage(): React.ReactElement {
 				<a
 					className={"underline text-blue-500 "}
 					href={
-						"https://calendar.google.com/calendar/b/4?cid=ZzloNmNxaXNvOTY2ZTk2dXFqMWN2Mm9oZ2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+						"https://calendar.google.com/calendar/u/0/r?cid=dublinmodelun@gmail.com"
 					}
 					target={"_blank"}
 					rel={"noopener noreferrer"}

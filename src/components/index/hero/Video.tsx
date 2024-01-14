@@ -31,7 +31,7 @@ export default function Video() {
 								rel: 0,
 							},
 						}}
-						videoId={"v29pdTZH7RE"}
+						videoId={"jpVagGj6ct0"}
 					/>
 				</div>
 			)}
@@ -44,12 +44,12 @@ export default function Video() {
 					<Img
 						className="w-full"
 						fluid={data.thumbnail.childImageSharp.fluid}
-						alt="We Are MVMUN"
+						alt="We Are DHSMUN"
 					/>
 
 					<div className="absolute inset-0 flex items-center justify-center w-full h-full">
 						<svg
-							className="w-20 h-20 text-indigo-500"
+							className="w-20 h-20 text-blue-500"
 							fill="currentColor"
 							viewBox="0 0 84 84"
 						>

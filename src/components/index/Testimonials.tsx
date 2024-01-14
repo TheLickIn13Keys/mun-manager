@@ -30,7 +30,7 @@ function Testimonial({
 					role="img"
 					aria-labelledby="svg-workcation"
 				>
-					<defs>
+					{/* <defs>
 						<pattern
 							id="ad119f34-7694-4c31-947f-5c9d249b21f3"
 							x={0}
@@ -48,7 +48,7 @@ function Testimonial({
 								fill="currentColor"
 							/>
 						</pattern>
-					</defs>
+					</defs> */}
 					<rect
 						width={404}
 						height={404}
@@ -57,23 +57,23 @@ function Testimonial({
 				</svg>
 				<div className="relative">
 					<blockquote className="mt-10">
-						<div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+						<div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-white">
 							<p>{content}</p>
 						</div>
 						<footer className="mt-8">
 							<div className="md:flex md:items-center md:justify-center">
 								<div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-									<div className="text-base font-medium text-gray-900">
+									<div className="text-base font-medium text-white">
 										{name}
 									</div>
 									<svg
-										className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
+										className="hidden md:block mx-1 h-5 w-5 text-blue-600"
 										fill="currentColor"
 										viewBox="0 0 20 20"
 									>
 										<path d="M11 0h3L9 20H6l5-20z" />
 									</svg>
-									<div className="text-base font-medium text-gray-500">
+									<div className="text-base font-medium text-gray-300">
 										{university}
 									</div>{" "}
 								</div>
@@ -87,7 +87,7 @@ function Testimonial({
 }
 export default function TestimonialsSection() {
 	return (
-		<div className={"bg-gray-100 pb-16"}>
+		<div className={"bg-blue-800 pb-16"}>
 			<Flickity
 				className={"carousel"} // default ''
 				elementType={"div"} // default 'div'
@@ -97,56 +97,43 @@ export default function TestimonialsSection() {
 				static // default false
 			>
 				<Testimonial
-					name={"Parth Asawa"}
-					university={"UC Berkeley MET"}
+					name={"Anish Kataria"}
+					university={"Princeton"}
 					content={
 						<>
-							One of the things Model UN gave me the most out of
-							anything else was confidence. I used to go into
-							presentations fretting and worrying about my lines,
-							but after just one year in MUN, they became the
-							thing I looked forward to the most. The confidence
-							and general research + people skills you’ll learn in
-							MV MUN are very very important skills that are
-							applicable in almost every part of your life — even
-							if you don’t intend on pursuing geopolitics as a
-							career in the future. Joining MV MUN is a decision
-							I’ll never regret.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, 
+							molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+							numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+							optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+							obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+							nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+							tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+							quia. Quo neque error repudiandae fuga?
 						</>
 					}
 				/>
 				<Testimonial
-					name={" Eugene Yoon"}
-					university={"CMU"}
+					name={"Avi Ahuja"}
+					university={"Oregon"}
 					content={
 						<>
-							MUN was a pretty big turning point in my high school
-							career because it helped me grow a voice and a
-							passion for sustainable solutions for real-world
-							problems — something that a lot of high school
-							classes don't really touch on. By having a newfound
-							perspective on the world I could approach a lot of
-							problems in many different dimensions, even if not
-							related to MUN itself.
+							bro i miss writing position papers
 						</>
 					}
 				/>
 				<Testimonial
-					name={"Nelson Mu"}
-					university={"UC Santa Barbara"}
+					name={"Katie Cheng"}
+					university={"Stanford"}
 					content={
 						<>
-							Through my four years in MUN, I learned not just the
-							leadership and speaking skills that are advertised,
-							but so much more. I learned how to network with
-							likeminded individuals, make new friends, and above
-							all else, I learned that it was okay to not know the
-							future for sure. No matter what twist or turn
-							committee would take, I was trained to always land
-							on my feet, even if things looked rough. ... Even for
-							the most diehard STEMers, I guarantee that you'll
-							gain something unexpected from your time in Model
-							UN.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, 
+							molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+							numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+							optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+							obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+							nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+							tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+							quia. Quo neque error repudiandae fuga?
 						</>
 					}
 				/>

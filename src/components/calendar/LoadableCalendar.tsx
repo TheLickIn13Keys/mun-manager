@@ -15,13 +15,13 @@ export default function LoadableCalendar(): React.ReactElement {
 			googleCalendarPlugin,
 			timeGridPlugin,
 		],
-		googleCalendarApiKey: "AIzaSyAWBRPsh5fXjotQ0IT9DZQhygkpzu-SL4w",
+		googleCalendarApiKey: "AIzaSyB7nKpntp6gBY5fg6l4cUVY-s6nRbwVorE",
 		events: {
 			googleCalendarId:
-				"g9h6cqiso966e96uqj1cv2ohgc@group.calendar.google.com",
+				"dublinmodelun@gmail.com",
 			className: "gcal-event",
 		},
-		noEventsContent: "There are no MVMUN events this month",
+		noEventsContent: "There are no DHSMUN events this month",
 		fixedWeekCount: false,
 	};
 	return (

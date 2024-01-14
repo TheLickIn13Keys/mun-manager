@@ -63,14 +63,14 @@ export default function About({
 
 				<div className="relative">
 					<h3 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl sm:leading-10">
-						Club. Delegation. Community.
+						Dublin Down on Diplomacy
 					</h3>
 					<p className="max-w-2xl mx-auto mt-4 text-3xl leading-7 text-center text-gray-500">
-						Here’s how we stand out — and how you can, too.
+						Model UN is awesome — here's why you should join us!
 					</p>
 				</div>
 
-				<div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+				{/* <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 					<div className="relative">
 						<h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
 							Build Lasting Skills
@@ -90,7 +90,7 @@ export default function About({
 							<li>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+										<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
 											<Icons.ChatAlt2
 												className={"h-6 w-6"}
 											/>
@@ -114,7 +114,7 @@ export default function About({
 							<li className="mt-10">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+										<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
 											<Icons.LightBulb
 												className={"h-6 w-6"}
 											/>
@@ -144,7 +144,7 @@ export default function About({
 							<li className="mt-10">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+										<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
 											<Icons.GlobeAlt className="w-6 h-6" />
 										</div>
 									</div>
@@ -208,7 +208,7 @@ export default function About({
 							alt=""
 						/>
 					</div>
-				</div>
+				</div> */}
 
 				<svg
 					className="absolute hidden transform translate-x-1/2 translate-y-12 lg:block right-full"
@@ -247,38 +247,29 @@ export default function About({
 					<div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
 						<div className="lg:col-start-2">
 							<h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
-								Build Lasting Connections
+								An Experince You'll Never Forget
 							</h4>
 							<p className="mt-3 text-lg leading-7 text-gray-500">
-								It’s not just the skills you'll learn in Model
-								UN that will stay with you throughout your life;
-								it's the connections as well. Many of us have
-								made new friends—and we promise, you'll fit
-								right in!
+								Joining Dublin High's Model UN club means engaging in more than just debates. Here's what we offer:
 							</p>
 
 							<ul className="mt-10">
 								<li>
 									<div className="flex">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+											<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
 												<Icons.UserGroup className="w-6 h-6" />
 											</div>
 										</div>
 										<div className="ml-4">
 											<h5 className="text-lg font-medium leading-6 text-gray-900">
-												Make New Friends
+												Building Friendships
 											</h5>
 											<p className="mt-2 text-base leading-6 text-gray-500">
-												We know most things are more fun
-												when you do them with friends,
-												and Model UN is no exception,
-												and that’s why our club
-												community is central to
-												everything we do. Many of us
-												have made some of our best
-												friends by joining Model UN, and
-												you can too!
+											Beyond the formalities, we're a club that loves to have fun. 
+											Whether it's sharing laughs over lunch at conferences or bunking with others at overnight trips, 
+											our club is a place where you can make friends who share your interests. 
+											These aren't just teammates; they become your Model UN family.
 											</p>
 										</div>
 									</div>
@@ -286,23 +277,20 @@ export default function About({
 								<li className="mt-10">
 									<div className="flex">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
-												<Icons.Library className="w-6 h-6" />
+											<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
+												<Icons.LightBulb className="w-6 h-6" />
 											</div>
 										</div>
 										<div className="ml-4">
 											<h5 className="text-lg font-medium leading-6 text-gray-900">
-												Join Our Community
+												Learning Skills
 											</h5>
 											<p className="mt-2 text-base leading-6 text-gray-500">
-												Beyond meeting new friends, at
-												MV Model UN you’ll also be
-												joining a community of not only
-												fellow delegates, but also
-												veterans, mentors, and alumni.
-												No matter who you are, our
-												community is here to support
-												you—don’t be shy!
+											We focus on developing key life skills. 
+											After attending regular meetings, you'll grow into a confident public speaker and 
+											learn how to lead effectively. 
+											Our activities and workshops are designed to be engaging and supportive, 
+											helping you to find your voice and use it powerfully.
 											</p>
 										</div>
 									</div>
@@ -310,24 +298,38 @@ export default function About({
 								<li className="mt-10">
 									<div className="flex">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
-												<Icons.Chat className="w-6 h-6" />
+											<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
+												<Icons.GlobeAlt className="w-6 h-6" />
 											</div>
 										</div>
 										<div className="ml-4">
 											<h5 className="text-lg font-medium leading-6 text-gray-900">
-												Engaging Meetings
+												Understanding the World
 											</h5>
 											<p className="mt-2 text-base leading-6 text-gray-500">
-												We know content-heavy meetings
-												can become tedious, which is why
-												we’ve implemented interactive
-												and hands-on activities during
-												each meeting to help learn the
-												material. From small-group
-												discussions to whole-group mock
-												conferences, our meetings are
-												nothing short of fun.
+												In MUN, you'll dive deep into global politics and current events. 
+												We debate, discuss, and dissect international issues, helping you to become more politically aware and globally conscious. 
+												It's not just about understanding the world; it's about preparing to make a positive impact in it.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li className="mt-10">
+									<div className="flex">
+										<div className="flex-shrink-0">
+											<div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
+												<Icons.AcademicCap className="w-6 h-6" />
+											</div>
+										</div>
+										<div className="ml-4">
+											<h5 className="text-lg font-medium leading-6 text-gray-900">
+												Impressive on College Applications
+											</h5>
+											<p className="mt-2 text-base leading-6 text-gray-500">
+											Participation in Model UN is a standout addition to your college applications! 
+											It demonstrates your commitment to global issues, your ability to work in a team, 
+											and your development in leadership and public speaking skills. 
+											It's an experience that shows colleges you're a well-rounded, engaged, and informed applicant. Dublin High MUN alumni have gone on to attend top universities, including Princeton, Stanford, and UC Berkeley.
 											</p>
 										</div>
 									</div>

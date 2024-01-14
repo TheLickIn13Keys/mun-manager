@@ -11,13 +11,13 @@ function IndexPage(): React.ReactElement {
 
 	return (
 		<Layout
-			title={"Monta Vista Model United Nations"}
+			title={"Dublin High Model United Nations"}
 			navbarShadow="scroll"
 			formatTitle={false}
 		>
 			<Hero2 aboutRef={aboutRef} />
 			<About aboutRef={aboutRef} noTopDecorativeDots />
-			<Stats />
+			{/* <Stats /> */}
 			<Testimonials/>
 			<CTA />
 		</Layout>

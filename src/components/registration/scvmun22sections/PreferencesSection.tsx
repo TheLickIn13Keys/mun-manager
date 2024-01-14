@@ -73,7 +73,7 @@ export default function PreferencesSection({
 									rel={"noopener noreferrer"}
 									target={"_blank"}
 									className={
-										"py-1 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white shadow-sm bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out"
+										"py-1 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white shadow-sm bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out"
 									}
 								>
 									View Committees
@@ -152,7 +152,7 @@ export default function PreferencesSection({
 											(errors.scvmun22CommitteeConfirm &&
 											touched.scvmun22CommitteeConfirm
 												? "focus:ring-red-500 text-red-600"
-												: "focus:ring-indigo-500 text-indigo-600")
+												: "focus:ring-blue-500 text-blue-600")
 										}
 									/>
 								</div>

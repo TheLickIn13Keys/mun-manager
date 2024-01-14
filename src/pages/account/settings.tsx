@@ -159,7 +159,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*										<input*/}
 				{/*											id="comments"*/}
 				{/*											type="checkbox"*/}
-				{/*											className="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*											className="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*										/>*/}
 				{/*									</div>*/}
 				{/*									<div className="ml-3 text-sm leading-5">*/}
@@ -183,7 +183,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*											<input*/}
 				{/*												id="candidates"*/}
 				{/*												type="checkbox"*/}
-				{/*												className="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*												className="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*											/>*/}
 				{/*										</div>*/}
 				{/*										<div className="ml-3 text-sm leading-5">*/}
@@ -208,7 +208,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*											<input*/}
 				{/*												id="offers"*/}
 				{/*												type="checkbox"*/}
-				{/*												className="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*												className="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*											/>*/}
 				{/*										</div>*/}
 				{/*										<div className="ml-3 text-sm leading-5">*/}
@@ -244,7 +244,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*										id="push_everything"*/}
 				{/*										name="push_notifications"*/}
 				{/*										type="radio"*/}
-				{/*										className="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*										className="form-radio h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*									/>*/}
 				{/*									<label*/}
 				{/*										htmlFor="push_everything"*/}
@@ -260,7 +260,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*										id="push_email"*/}
 				{/*										name="push_notifications"*/}
 				{/*										type="radio"*/}
-				{/*										className="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*										className="form-radio h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*									/>*/}
 				{/*									<label*/}
 				{/*										htmlFor="push_email"*/}
@@ -276,7 +276,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*										id="push_nothing"*/}
 				{/*										name="push_notifications"*/}
 				{/*										type="radio"*/}
-				{/*										className="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"*/}
+				{/*										className="form-radio h-4 w-4 text-blue-600 transition duration-150 ease-in-out"*/}
 				{/*									/>*/}
 				{/*									<label*/}
 				{/*										htmlFor="push_nothing"*/}
@@ -292,7 +292,7 @@ export default function SettingsPage(): React.ReactElement {
 				{/*						</fieldset>*/}
 				{/*					</div>*/}
 				{/*					<div className="px-4 py-3 bg-gray-50 text-right sm:px-6">*/}
-				{/*						<button className="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 focus:bg-indigo-500 active:bg-indigo-600 transition duration-150 ease-in-out">*/}
+				{/*						<button className="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-blue-500 focus:bg-blue-500 active:bg-blue-600 transition duration-150 ease-in-out">*/}
 				{/*							Save*/}
 				{/*						</button>*/}
 				{/*					</div>*/}
@@ -441,13 +441,13 @@ function PersonalInformationDisplay() {
 									If this was unexpected, please email us at{" "}
 									<a
 										href={
-											"mailto:support@montavistamun.com"
+											"mailto:dublinhighmodelun@gmail.com"
 										}
 										className={
 											"text-blue-500 active:text-blue-700 hover:underline"
 										}
 									>
-										support@montavistamun.com
+										dublinhighmodelun@gmail.com
 									</a>
 									.
 								</p>
@@ -478,7 +478,7 @@ function PersonalInformationDisplay() {
 								}}
 								type={"text"}
 								className={
-									"mt-1 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+									"mt-1 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 									(loadingProfile || profileChangeSubmitting
 										? "bg-gray-100"
 										: "")
@@ -505,7 +505,7 @@ function PersonalInformationDisplay() {
 								}}
 								type={"text"}
 								className={
-									"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+									"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 									(loadingProfile || profileChangeSubmitting
 										? "bg-gray-100"
 										: "")
@@ -575,8 +575,8 @@ function PersonalInformationDisplay() {
 							!hasUpdates ||
 							loadingProfile ||
 							profileChangeSubmitting
-								? "bg-indigo-300"
-								: "bg-indigo-600 hover:bg-indigo-500 focus:ring-blue-500 active:bg-indigo-600"
+								? "bg-blue-300"
+								: "bg-blue-600 hover:bg-blue-500 focus:ring-blue-500 active:bg-blue-600"
 						} shadow-sm focus:outline-none`}
 					>
 						{profileChangeSubmitting
@@ -669,7 +669,7 @@ function ChangePasswordModal({
 											resetForm();
 											onClose();
 										}}
-										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-indigo-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-blue-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
 									>
 										Close
 									</button>
@@ -750,13 +750,13 @@ function ChangePasswordModal({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:support@montavistamun.com"
+																	"mailto:dublinhighmodelun@gmail.com"
 																}
 																className={
 																	"text-blue-500 active:text-blue-700 hover:underline"
 																}
 															>
-																support@montavistamun.com
+																dublinhighmodelun@gmail.com
 															</a>
 															.
 														</p>
@@ -796,7 +796,7 @@ function ChangePasswordModal({
 														setError("");
 													}}
 													className={
-														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 														(submitting
 															? "bg-gray-100"
 															: "")
@@ -827,7 +827,7 @@ function ChangePasswordModal({
 														setError("");
 													}}
 													className={
-														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 														(submitting
 															? "bg-gray-100"
 															: "")
@@ -853,7 +853,7 @@ function ChangePasswordModal({
 														setError("");
 													}}
 													className={
-														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 														(submitting
 															? "bg-gray-100"
 															: "")
@@ -875,8 +875,8 @@ function ChangePasswordModal({
 											disabled={submitting}
 											className={
 												(submitting
-													? "bg-indigo-400"
-													: "bg-indigo-600 hover:bg-indigo-500 focus:border-indigo-700 focus:ring-indigo-500") +
+													? "bg-blue-400"
+													: "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:ring-blue-500") +
 												" " +
 												"inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 text-base leading-6 font-medium text-white shadow-sm focus:outline-none transition ease-in-out duration-150 sm:text-sm sm:leading-5"
 											}
@@ -1004,7 +1004,7 @@ function ChangeEmailModal({
 											resetForm();
 											onClose();
 										}}
-										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-indigo-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-blue-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
 									>
 										Close
 									</button>
@@ -1077,13 +1077,13 @@ function ChangeEmailModal({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:support@montavistamun.com"
+																	"mailto:dublinhighmodelun@gmail.com"
 																}
 																className={
 																	"text-blue-500 active:text-blue-700 hover:underline"
 																}
 															>
-																support@montavistamun.com
+																dublinhighmodelun@gmail.com
 															</a>
 															.
 														</p>
@@ -1132,7 +1132,7 @@ function ChangeEmailModal({
 														setError("");
 													}}
 													className={
-														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 														(submitting
 															? "bg-gray-100"
 															: "")
@@ -1160,7 +1160,7 @@ function ChangeEmailModal({
 														setError("");
 													}}
 													className={
-														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md " +
+														"mt-1 block w-full py-2 px-3 shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md " +
 														(submitting
 															? "bg-gray-100"
 															: "")
@@ -1194,8 +1194,8 @@ function ChangeEmailModal({
 											disabled={submitting}
 											className={
 												(submitting
-													? "bg-indigo-400"
-													: "bg-indigo-600 hover:bg-indigo-500 focus:border-indigo-700 focus:ring-indigo-500") +
+													? "bg-blue-400"
+													: "bg-blue-600 hover:bg-blue-500 focus:border-blue-700 focus:ring-blue-500") +
 												" " +
 												"inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 text-base leading-6 font-medium text-white shadow-sm focus:outline-none transition ease-in-out duration-150 sm:text-sm sm:leading-5"
 											}

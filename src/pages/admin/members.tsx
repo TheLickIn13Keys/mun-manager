@@ -440,7 +440,7 @@ export default function MembersPage(): React.ReactElement {
 										onClick={() =>
 											confirmModal?.onConfirm()
 										}
-										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-indigo-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+										className="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-blue-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
 									>
 										{confirmModal?.buttonText}
 									</button>
@@ -540,7 +540,7 @@ export default function MembersPage(): React.ReactElement {
 											>
 												<input
 													type="checkbox"
-													className="h-6 w-6 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+													className="h-6 w-6 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
 													checked={selectedUsers.has(
 														id
 													)}
@@ -626,7 +626,7 @@ export default function MembersPage(): React.ReactElement {
 											{/*<td className="px-6 py-4 whitespace-nowrap text-right border-b border-gray-200 text-sm leading-5 font-medium">*/}
 											{/*	<Link*/}
 											{/*		to="#"*/}
-											{/*		className="text-indigo-600 hover:text-indigo-900"*/}
+											{/*		className="text-blue-600 hover:text-blue-900"*/}
 											{/*	>*/}
 											{/*		Manage*/}
 											{/*	</Link>*/}

@@ -91,7 +91,7 @@ export default function SaveModal({
 												five minutes. You can check the
 												build status{" "}
 												<a
-													href="https://app.netlify.com/sites/montavistamun/deploys"
+													href="https://app.netlify.com/sites/dublinhsmun/deploys"
 													target={"_blank"}
 													rel={"noopener noreferrer"}
 													className="link"

@@ -19,8 +19,8 @@ export default function AboutPage(): React.ReactElement {
 	>(null);
 	React.useEffect(() => {
 		const calendarId =
-			"g9h6cqiso966e96uqj1cv2ohgc@group.calendar.google.com";
-		const calendarAPIKey = "AIzaSyAWBRPsh5fXjotQ0IT9DZQhygkpzu-SL4w";
+			"dublinmodelun@gmail.com";
+		const calendarAPIKey = "AIzaSyB7nKpntp6gBY5fg6l4cUVY-s6nRbwVorE";
 		const FORMAT = "dddd, MMMM Do, h:mm A";
 		(async () => {
 			const fetchData = async (): Promise<CalendarEvent[]> => {
@@ -122,7 +122,7 @@ export default function AboutPage(): React.ReactElement {
 						subtitle: "Next Member Meeting",
 						title: nextMeeting,
 						primaryAction: {
-							title: "Room C107",
+							title: "Room TBD",
 							link: "#",
 						},
 						secondaryAction: {
@@ -301,7 +301,7 @@ export default function AboutPage(): React.ReactElement {
 																	.primaryAction
 																	.link
 															}
-															className="font-medium text-indigo-700 hover:text-indigo-900"
+															className="font-medium text-blue-700 hover:text-blue-900"
 														>
 															{
 																card

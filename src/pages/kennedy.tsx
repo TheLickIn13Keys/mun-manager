@@ -64,7 +64,7 @@ export default function KennedyPage({
 									href="https://docs.google.com/forms/d/e/1FAIpQLScs5sQN0kCcA7jYjl60hAsRxMY28C3pI6cu-Kflh6dHCh9YiQ/viewform"
 									target={"_blank"}
 									rel={"noopener noreferrer"}
-									className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring transition duration-150 ease-in-out"
+									className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring transition duration-150 ease-in-out"
 								>
 									Get started
 								</a>
@@ -79,7 +79,7 @@ export default function KennedyPage({
 											behavior: "smooth",
 										})
 									}
-									className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:ring focus:border-indigo-300 transition duration-150 ease-in-out"
+									className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring focus:border-blue-300 transition duration-150 ease-in-out"
 								>
 									Learn more
 								</button>
@@ -116,7 +116,7 @@ export default function KennedyPage({
 						</h2>
 						<div className="mt-3">
 							<p className="text-lg leading-7 text-gray-500">
-								The Monta Vista Model UN team brings its middle
+								The Dublin High Model UN team brings its middle
 								school division to a variety of conferences
 								which allow its delegates to compete in rigorous
 								policy and debate on a number of pressing and
@@ -145,10 +145,10 @@ export default function KennedyPage({
 								{
 									name: "South Bay Model United Nations",
 									date: "Date TBA", // TODO when available
-									location: "Monta Vista High School",
+									location: "Dublin High High School",
 									acronym: "sbmun",
 									text:
-										"South Bay Model United Nations Conference is Monta Vista's very own conference! It offers delegates the opportunity to continue practicing MUN skills with other delegates from the Bay Area. MUN conferences are rare in the spring season, so this is a great way for you to keep honing on your MUN abilities.",
+										"South Bay Model United Nations Conference is Dublin High's very own conference! It offers delegates the opportunity to continue practicing MUN skills with other delegates from the Bay Area. MUN conferences are rare in the spring season, so this is a great way for you to keep honing on your MUN abilities.",
 								},
 							].map(
 								(
@@ -205,7 +205,7 @@ export default function KennedyPage({
 							<h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
 								Sound Fun?
 								<br />
-								<span className="text-indigo-600">
+								<span className="text-blue-600">
 									Join Kennedy MUN today
 								</span>
 							</h2>
@@ -215,7 +215,7 @@ export default function KennedyPage({
 										href="https://docs.google.com/forms/d/e/1FAIpQLSfvnloHZsjPOq8w7iRCRADJ9U6SDqcfyMylgehKO0bGMu0aIA/viewform"
 										target={"_blank"}
 										rel={"noopener noreferrer"}
-										className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring transition duration-150 ease-in-out"
+										className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring transition duration-150 ease-in-out"
 									>
 										Join Today
 									</a>

@@ -52,10 +52,10 @@ export default function HandleEmailActionPage({ location }: PageProps) {
 						send you. If you followed a link to get to this page,
 						please email{" "}
 						<a
-							href="mailto:support@montavistamun.com"
+							href="mailto:dublinhighmodelun@gmail.com"
 							className="link"
 						>
-							support@montavistamun.com
+							dublinhighmodelun@gmail.com
 						</a>{" "}
 						and let us know how you got to this page.
 					</p>

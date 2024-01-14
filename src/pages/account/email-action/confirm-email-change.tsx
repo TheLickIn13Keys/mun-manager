@@ -74,10 +74,10 @@ export default function HandleEmailActionPage({
 								for was disabled. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:support@montavistamun.com"
+									href="mailto:dublinhighmodelun@gmail.com"
 									className="link"
 								>
-									support@montavistamun.com
+									dublinhighmodelun@gmail.com
 								</a>
 								.
 							</>
@@ -90,10 +90,10 @@ export default function HandleEmailActionPage({
 								for was deleted. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:support@montavistamun.com"
+									href="mailto:dublinhighmodelun@gmail.com"
 									className="link"
 								>
-									support@montavistamun.com
+									dublinhighmodelun@gmail.com
 								</a>
 								.
 							</>
@@ -105,10 +105,10 @@ export default function HandleEmailActionPage({
 								{error.message} <br />
 								If this was unexpected, please email{" "}
 								<a
-									href="mailto:support@montavistamun.com"
+									href="mailto:dublinhighmodelun@gmail.com"
 									className="link"
 								>
-									support@montavistamun.com
+									dublinhighmodelun@gmail.com
 								</a>
 								.
 							</>
@@ -194,13 +194,13 @@ export default function HandleEmailActionPage({
 													please email us at{" "}
 													<a
 														href={
-															"mailto:support@montavistamun.com"
+															"mailto:dublinhighmodelun@gmail.com"
 														}
 														className={
 															"text-blue-500 active:text-blue-700 hover:underline"
 														}
 													>
-														support@montavistamun.com
+														dublinhighmodelun@gmail.com
 													</a>
 													.
 												</p>
@@ -257,8 +257,8 @@ export default function HandleEmailActionPage({
 									className={classNames(
 										"w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out",
 										submitting
-											? "bg-indigo-400"
-											: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+											? "bg-blue-400"
+											: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 									)}
 								>
 									{submitting
@@ -279,7 +279,7 @@ export default function HandleEmailActionPage({
 					<Link
 						to={"/account/login"}
 						className={
-							"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+							"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 						}
 					>
 						Log In

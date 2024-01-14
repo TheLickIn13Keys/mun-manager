@@ -4,19 +4,19 @@ export default [
 	 	date: "October 21, 2023",
 	 	location: "Henry M. Gunn High School",
 	 	acronym: "gmunc",
-	 	text: `Gunn Model United Nations Conference is our first conference of the year, and the one where we always take the most novices too. Fun fact: Monta Vista won the Best Delegation award at GMUNC for 3 years in a row!`,
+	 	text: `Gunn Model United Nations Conference is our first conference of the year, and the one where we always take the most novices too. Fun fact: Dublin High won the Best Delegation award at GMUNC for 3 years in a row!`,
 		//registration: "https://docs.google.com/forms/d/1koPXq06Gys8j8nLwvW6ilxE6U-avNnudD7ou9rMTaIc/",
 		//registrationText: "Application deadline 9/21",
 	},
-	{
-	 	name: "Stanford Model UN Conference",
-	 	date: "November 10, 2023 - November 12, 2023",
-	 	location: "Stanford University",
-	 	acronym: "smunc",
-	 	text: `The Stanford Model United Nations Conference is one of the most competitive conferences of the year, but also one with most to offer. With three days packed with five committee sessions, it may leave you a bit exhausted, but never with any regrets about attending!`,
-	 	//registration: "https://docs.google.com/forms/d/1VdAGqj2s-GnTT_BoyWMhHmDeE3Vq1IAusn1C5Gvdoec",
-	 	//registrationText: "Sign up now! Application closes 10/19",
-	},
+	// {
+	//  	name: "Stanford Model UN Conference",
+	//  	date: "November 10, 2023 - November 12, 2023",
+	//  	location: "Stanford University",
+	//  	acronym: "smunc",
+	//  	text: `The Stanford Model United Nations Conference is one of the most competitive conferences of the year, but also one with most to offer. With three days packed with five committee sessions, it may leave you a bit exhausted, but never with any regrets about attending!`,
+	//  	//registration: "https://docs.google.com/forms/d/1VdAGqj2s-GnTT_BoyWMhHmDeE3Vq1IAusn1C5Gvdoec",
+	//  	//registrationText: "Sign up now! Application closes 10/19",
+	// },
 	/*{
 		name: "Bruin Model UN Conference",
 		date: "November 6, 2021 - November 7, 2021",
@@ -47,48 +47,41 @@ export default [
 		//registrationText: "Sign up by 11/9!",
 	},
 	{
-		name: "Santa Clara Valley Model United Nations Conference",
+		name: "Gaucho Model United Nations Conference",
 		date: "February 2, 2024 - February 3, 2024",
-		location: "Santa Teresa High School",
-		acronym: "scvmun",
+		location: "University of California, Santa Barbara",
+		acronym: "gauchomun",
 		text:
-			"The Santa Clara Valley Model United Nations Conference is recommended for all members regardless of prior experience. SCVMUN is a great chance to prepare for more difficult or competitive conferences — but as the second-oldest and second-largest conference on the West Coast, it has plenty to offer of its own right as well.",
+			"Gaucho Model United Nations Conference is one of our travel conferences in SoCal. It’s a great way to use many of the skills you've aquired throughout the year and it’s highly recommended for all delegates to attend.",
 	},
 	{
-		name: "North American Invitational Model United Nations Conference",
-		date: "February 15, 2024 - February 18, 2024",
-		location: "Georgetown University",
-		acronym: "naimun",
+		name: "Golden State Model United Nations Conference",
+		date: "February 24, 2024",
+		location: "Granite Bay High School",
+		acronym: "gsmunc",
 		text:
-			"The North American Invitational Model United Nations Conference is one of our travel conferences. With over 3,000 delegates each year, NAIMUN is the largest student-run Model United Nations conference in the world, and many consider it the de facto national championship conference. Don’t let all that scare you, though: it’s often best remembered by delegates as a 6-day trip to Washington, DC, full of chances to meet new people and make new friends.",
-		registration: "https://bit.ly/naimun2022app",
-		registrationText: "Application Open!",
+			"Golden State Model United Nations Conference is held at Granite Bay High School. The conference has numerous committees for delegates of all skill levels and is recommended for both old and new delegates.",
+		// registration: "https://bit.ly/naimun2022app",
+		// registrationText: "Application Open!",
 	},
-	/*{
-		name: "Nation High School Model United Nations Conference",
+	{
+		name: "National High School Model United Nations Conference",
 		date: "March 8, 2024 - March 11, 2024",
 		location: "New York Hilton Midtown and United Nations Headquaters",
 		acronym: "nhsmun",
 		text:
 			"The National High School Model United Nations Conference is one of our travel conferences. NHSMUN is the world's largest, most diverse, and most prestigious MUN conference for high-school students, with students from over 130 countries hosted. Don’t let all that scare you, though: it’s often best remembered by delegates as a 5-day trip to New York City, NY, full of chances to meet new people and make new friends.",
-		registration: "https://forms.gle/UCbJ9vVxqaYU8caT7",
-		registrationText: "Apply Now! Applications due 12/1",
-	},*/
-	/*{
-		name: "Berkeley Model United Nations Conference",
-		date: "March 4, 2022 - March 6, 2022",
-		location: "University of California, Berkeley",
-		acronym: "bmun",
-		text:
-			"Our fifth conference of the year, Berkeley Model United Nations Conference, is the oldest high school Model UN conference in the world. With over 2,000 delegates each year, it ranks with NAIMUN among the premier high school conferences in the world — and, likewise, among those with the most fun in store. BMUN is our second overnight conference, located in nearby Berkeley, California, including a 2-night hotel stay.",
-	},*/
+		// registration: "https://forms.gle/UCbJ9vVxqaYU8caT7",
+		// registrationText: "Apply Now! Applications due 12/1",
+	},
+
 	{
 		name: "South Bay Model United Nations",
-		date: "TBA",
-		location: "Monta Vista High School",
+		date: "TBD",
+		location: "Dublin High High School",
 		acronym: "sbmun",
 		text:
-			"South Bay Model United Nations Conference is one of our last conferences of the year, and is co-hosted by yours truly at Monta Vista! It’s a great chance to hone your Model UN skills with other delegates from the Bay Area. MUN conferences are rare in the spring season, so this is a great way for you to keep improving on your MUN abilities.",
+			"Co-hosted by Homestead and Dublin High HS",
 		// registration: "/conferences/sbmun/register",
 	},
 	{

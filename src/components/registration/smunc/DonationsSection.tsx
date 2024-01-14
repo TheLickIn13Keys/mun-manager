@@ -76,8 +76,8 @@ export default function DonationsSection({
 							className={cx(
 								"mt-4 py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white shadow-sm",
 								submitting
-									? "bg-indigo-300"
-									: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out"
+									? "bg-blue-300"
+									: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out"
 							)}
 							disabled={skipping}
 							onClick={(e) => {
@@ -132,7 +132,7 @@ export default function DonationsSection({
 
 						<ul className="list-decimal ml-8">
 							<li>
-								Head to Monta Vista’s online Student Store and
+								Head to Dublin High’s online Student Store and
 								find our smunc conference donation{" "}
 								<a
 									target={"_blank"}
@@ -248,8 +248,8 @@ export default function DonationsSection({
 							skipping ||
 							(!data?.forms?.smuncDonation &&
 								!data?.forms?.smuncDonationOptOut)
-							? "bg-indigo-300"
-							: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out"
+							? "bg-blue-300"
+							: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out"
 					)}
 				>
 					{uploading

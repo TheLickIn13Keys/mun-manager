@@ -56,24 +56,22 @@ export default function Hero({
 					<div className="lg:grid lg:grid-cols-12 lg:gap-8">
 						<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 							<h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-								<span className="text-indigo-600">
-									Stand out
+								<span className="text-blue-600">
+									Dublin High School
 								</span>{" "}
-								from the crowd.
+								Model UN
 							</h2>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-								We’re a close-knit community that strives for
-								experiences in leadership, diplomacy, and
-								problem-solving by simulating the United
-								Nations.
+								Official website for Dublin High’s Model United Nations club. 
+								Go to conferences, win awards, and learn about the nuances of international politics.
 							</p>
-							{<p className="mt-3 text-base font-bold text-indigo-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-								Meetings every Thursday at lunch in C107!
+							{<p className="mt-3 text-base font-bold text-blue-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+								Meetings every other Thursday!
 							</p>}
 							<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 								<div className="rounded-md shadow">
 									<Link
-										className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
+										className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-600 border border-transparent rounded-md hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 md:py-4 md:text-lg md:px-10"
 										to={"/account/create"}
 									>
 										Join Us
@@ -81,7 +79,7 @@ export default function Hero({
 								</div>
 								<div className="mt-3 sm:mt-0 sm:ml-3 ">
 									<button
-										className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:ring-indigo-500 focus:border-indigo-300 md:py-4 md:text-lg md:px-10"
+										className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-700 transition duration-150 ease-in-out bg-blue-100 border border-transparent rounded-md hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-blue-500 focus:border-blue-300 md:py-4 md:text-lg md:px-10"
 										onClick={() =>
 											aboutRef &&
 											// eslint-disable-next-line @typescript-eslint/ban-ts-comment

@@ -1057,7 +1057,7 @@ export default function AdminLogPage(): React.ReactElement {
 				<button
 					onClick={() => exportRegistration(false, exportAllFields)}
 					type="button"
-					className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700 transition ease-in-out duration-150"
+					className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700 transition ease-in-out duration-150"
 				>
 					<span>
 						Export completed {selectedConference.toUpperCase()}{" "}
@@ -1067,7 +1067,7 @@ export default function AdminLogPage(): React.ReactElement {
 				<button
 					onClick={() => exportRegistration(true, exportAllFields)}
 					type="button"
-					className="mt-3 md:mt-0 md:ml-3 relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700 transition ease-in-out duration-150"
+					className="mt-3 md:mt-0 md:ml-3 relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700 transition ease-in-out duration-150"
 				>
 					<span>
 						Export all {selectedConference.toUpperCase()}{" "}

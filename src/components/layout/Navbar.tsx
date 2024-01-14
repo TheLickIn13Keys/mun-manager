@@ -47,7 +47,7 @@ function Navbar({
 				childImageSharp {
 					# Specify a fixed image and fragment.
 					# The default width is 400 pixels
-					fixed(height: 32) {
+					fixed(height: 64) {
 						...GatsbyImageSharpFixed_withWebp_noBase64
 					}
 				}
@@ -86,18 +86,18 @@ function Navbar({
 									)}
 								</button>
 							</div>
-							<div className="flex-shrink-0 flex items-center">
+							<div className="h-100 flex-shrink-0 flex items-center">
 								<Link to="/" aria-label="Home">
 									<Img
-										className="h-8 w-auto"
+										className="h-50 w-auto"
 										fixed={
 											logoData.logo.childImageSharp.fixed
 										}
-										alt="MVMUN logo"
+										alt="DHSMUN logo"
 									/>
 								</Link>
 							</div>
-							<div className="hidden md:ml-6 md:flex">
+							<div className="hidden md:flex">
 								{[
 									...navLinks,
 									...(auth.verified ? ["Resources"] : []),
@@ -111,7 +111,7 @@ function Navbar({
 												.toLowerCase()
 												.replace(/\//g, "") ==
 											page.toLowerCase()
-												? /*     ACTIVE: */ "border-indigo-500 text-gray-900 focus:border-indigo-700"
+												? /*     ACTIVE: */ "border-blue-500 text-gray-900 focus:border-blue-700"
 												: /* NOT ACTIVE: */ "border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300")
 										}
 									>
@@ -125,13 +125,13 @@ function Navbar({
 								<div className="flex-shrink-0">
 									<Link
 										to={"/account/create"}
-										className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700 transition ease-in-out duration-150"
+										className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700 transition ease-in-out duration-150"
 									>
 										<span>Join Today</span>
 									</Link>
 									<Link
 										to={"/account/login"}
-										className="hidden md:inline-block ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-900 bg-white hover:text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700 transition ease-in-out duration-150"
+										className="hidden md:inline-block ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-900 bg-white hover:text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700 transition ease-in-out duration-150"
 									>
 										<span>Login</span>
 									</Link>
@@ -159,7 +159,7 @@ function Navbar({
 											.toLowerCase()
 											.replace(/\//g, "") ==
 										page.toLowerCase()
-											? /*     ACTIVE: */ "border-indigo-500 text-indigo-700 bg-indigo-50 focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700"
+											? /*     ACTIVE: */ "border-blue-500 text-blue-700 bg-blue-50 focus:text-blue-800 focus:bg-blue-100 focus:border-blue-700"
 											: /* NOT ACTIVE: */ "border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300")
 									}
 								>
@@ -176,7 +176,7 @@ function Navbar({
 												.toLowerCase()
 												.replace(/\//g, "") ==
 											"/account/create"
-												? /*     ACTIVE: */ "border-indigo-500 text-indigo-700 bg-indigo-50 focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700"
+												? /*     ACTIVE: */ "border-blue-500 text-blue-700 bg-blue-50 focus:text-blue-800 focus:bg-blue-100 focus:border-blue-700"
 												: /* NOT ACTIVE: */ "border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300")
 										}
 									>
@@ -190,7 +190,7 @@ function Navbar({
 												.toLowerCase()
 												.replace(/\//g, "") ==
 											"/account/login"
-												? /*     ACTIVE: */ "border-indigo-500 text-indigo-700 bg-indigo-50 focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700"
+												? /*     ACTIVE: */ "border-blue-500 text-blue-700 bg-blue-50 focus:text-blue-800 focus:bg-blue-100 focus:border-blue-700"
 												: /* NOT ACTIVE: */ "border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300")
 										}
 									>

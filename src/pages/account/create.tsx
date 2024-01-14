@@ -89,9 +89,9 @@ export default function CreatePage({
 	}, [sysend, firebase]);
 	return (
 		<AuthLayout
-			title={"Join MVMUN"}
+			title={"Join DHSMUN"}
 			description={
-				"Monta Vista Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences. Join MV Model UN today to start your MUN journey!"
+				"Dublin High Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences. Join MV Model UN today to start your MUN journey!"
 			}
 		>
 			{done ? (
@@ -108,7 +108,7 @@ export default function CreatePage({
 							!
 						</h2>
 						<h3 className="mt-3 text-xl font-bold text-gray-700">
-							You're now a member of Monta Vista Model United
+							You're now a member of Dublin High Model United
 							Nations!
 						</h3>
 					</div>
@@ -169,7 +169,7 @@ export default function CreatePage({
 							<Link
 								to={state?.continueURL || "/dashboard/"}
 								className={classNames(
-									"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+									"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 								)}
 							>
 								{state?.continueURL
@@ -194,8 +194,8 @@ export default function CreatePage({
 									className={classNames(
 										"w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out",
 										resendTimeLeft > 0
-											? "bg-indigo-400"
-											: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+											? "bg-blue-400"
+											: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 									)}
 									onClick={() => {
 										if (resendTimeLeft > 0) return;
@@ -217,10 +217,10 @@ export default function CreatePage({
 									Remember to check your spam folder. If you
 									still don't see it, send us an email at{" "}
 									<a
-										href="mailto:support@montavistamun.com"
+										href="mailto:dublinhighmodelun@gmail.com"
 										className="link"
 									>
-										support@montavistamun.com
+										dublinhighmodelun@gmail.com
 									</a>
 									.
 								</p>
@@ -240,7 +240,7 @@ export default function CreatePage({
 								state={{
 									continueURL: state?.continueURL,
 								}}
-								className="font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500 focus:outline-none focus:underline"
+								className="font-medium text-blue-600 transition duration-150 ease-in-out hover:text-blue-500 focus:outline-none focus:underline"
 							>
 								Already have an account?
 							</Link>
@@ -422,13 +422,13 @@ export default function CreatePage({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:support@montavistamun.com"
+																	"mailto:dublinhighmodelun@gmail.com"
 																}
 																className={
 																	"link"
 																}
 															>
-																support@montavistamun.com
+																dublinhighmodelun@gmail.com
 															</a>
 															.
 														</p>
@@ -489,7 +489,7 @@ export default function CreatePage({
 																			? ""
 																			: "bg-gray-200"
 																  }`
-																: "text-indigo-600"
+																: "text-blue-600"
 														}`}
 														onChange={(e) =>
 															e.target.checked &&
@@ -654,7 +654,7 @@ export default function CreatePage({
 										You must be a MVHS student to join.
 									</p>
 									<p className="mt-2 text-sm text-gray-500">
-										When you create your MVMUN account, you
+										When you create your DHSMUN account, you
 										will be automatically sent member
 										updates every week.
 									</p>
@@ -666,8 +666,8 @@ export default function CreatePage({
 											className={classNames(
 												"w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out",
 												submitting
-													? "bg-indigo-400"
-													: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+													? "bg-blue-400"
+													: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 											)}
 										>
 											{submitting

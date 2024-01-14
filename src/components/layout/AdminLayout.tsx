@@ -76,10 +76,10 @@ export default function AdminLayout({
 			<Navbar shadow={"always"} noMaxWidth />
 			<SEO
 				keywords={[
-					"cuptertino",
+					"dublin",
 					"model un",
 					"mun",
-					"monta vista",
+					"dhs",
 					"club",
 					"model united nations",
 				]}

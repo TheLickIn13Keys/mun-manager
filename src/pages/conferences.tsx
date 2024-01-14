@@ -34,13 +34,11 @@ export default function ConferencesPage({
 		<Layout
 			title={"Conferences"}
 			description={
-				"MV Model UN's conferences offer excellent opportunities to hone your " +
-				"skills with your peers — all while having a blast!"
+				"Conferences are the best way to put your skills to the test and have fun!"
 			}
 		>
 			<Header backgroundImage={data.headerImage} title={"Conferences"}>
-				Our conferences offer excellent opportunities to hone your
-				skills with your peers — all while having a blast!
+				Conferences are the best way to put your skills to the test and have fun!
 			</Header>
 			<Main>
 				<h1 className={"text-3xl leading-7 font-extrabold"}>

@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
   	"name": "montavistamun",
-  	"description": "Monta Vista Model United Nations Club Website",
+  	"description": "Dublin High Model United Nations Club Website",
   	"license": "MIT",
   	"author": "Jeffrey Meng <jeffkmeng@gmail.com>",
   	"repository": {

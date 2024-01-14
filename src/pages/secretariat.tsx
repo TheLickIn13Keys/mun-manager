@@ -44,9 +44,7 @@ export default function SecretariatPage({
 		);
 	}, []);
 	const description =
-		"Who exactly do you contact when you need help? Who is behind" +
-		" those emails to you? That would be us, the secretariat! Get to" +
-		" know us, we’re always looking for new friends!";
+		"Hey there! We're the Secretariat of Dublin High MUN. Think of us as the behind-the-scenes crew making sure everything runs smoothly. We plan the meetings, make sure everyone gets to conferences, and are always there to help out our fellow club members. It's all about creating a fun and engaging space where everyone gets to debate global issues, grow their speaking skills, and, most importantly, have a great time doing it! We're all about teamwork, learning, and, of course, a bit of diplomatic wrangling!";
 	return (
 		<Layout title={"Secretariat"} description={description}>
 			<Header title={"Secretariat"} backgroundImage={data.headerImage}>
@@ -84,7 +82,7 @@ export default function SecretariatPage({
 				{memeMode && (
 					<div className="fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
 						<div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
-							<div className="p-2 rounded-lg bg-indigo-600 shadow-lg sm:p-3">
+							<div className="p-2 rounded-lg bg-blue-600 shadow-lg sm:p-3">
 								<div className="flex items-center justify-between flex-wrap">
 									<div className="w-0 flex-1 flex items-center">
 										<p className="ml-3 font-medium text-white truncate">
@@ -119,7 +117,7 @@ export default function SecretariatPage({
 										<div className="rounded-md shadow-sm">
 											<a
 												href="#"
-												className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:ring transition ease-in-out duration-150"
+												className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:ring transition ease-in-out duration-150"
 											>
 												Back
 											</a>
@@ -127,7 +125,7 @@ export default function SecretariatPage({
 									</div>
 									<div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2 sm:hidden">
 										<div
-											className="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150"
+											className="-mr-1 flex p-2 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 transition ease-in-out duration-150"
 											aria-label="Dismiss"
 										></div>
 									</div>

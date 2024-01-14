@@ -175,7 +175,7 @@ export default function WaiverFormsSection({
 			// const keys = Object.keys(pdfform.list_fields(pdf));
 			console.log(pdfform.list_fields(pdf));
 			const filled = pdfform.fillForm(pdf, {
-				Text1: ["Monta Vista High School"],
+				Text1: ["Dublin High High School"],
 				Text2: [user?.displayName],
 				Text3: [""],
 				Text4: [
@@ -291,8 +291,8 @@ export default function WaiverFormsSection({
 								className={
 									"py-1 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white shadow-sm " +
 									(filledForms[0] === null
-										? "bg-indigo-300"
-										: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out")
+										? "bg-blue-300"
+										: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out")
 								}
 								disabled={filledForms[0] === null}
 							>
@@ -337,8 +337,8 @@ export default function WaiverFormsSection({
 								className={
 									"py-1 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white shadow-sm " +
 									(filledForms[1] === null
-										? "bg-indigo-300"
-										: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out")
+										? "bg-blue-300"
+										: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out")
 								}
 								disabled={filledForms[1] === null}
 							>
@@ -420,8 +420,8 @@ export default function WaiverFormsSection({
 							sbmunFormUploading ||
 							!sbmunForm ||
 							sbmunForm.length === 0
-							? "bg-indigo-300"
-							: "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-blue-500 active:bg-indigo-600 transition duration-150 ease-in-out"
+							? "bg-blue-300"
+							: "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-blue-500 active:bg-blue-600 transition duration-150 ease-in-out"
 					)}
 				>
 					{fuhsdUploading

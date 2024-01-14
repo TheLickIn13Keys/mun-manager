@@ -12,7 +12,7 @@ export default function Footer({
 					<p className={"text-gray-400 mr-6"}>Contact Us:</p>
 
 					<a
-						href="mailto:info@montavistamun.com"
+						href="mailto:dublinhighmodelun@gmail.com"
 						className={
 							"text-gray-400 " +
 							(dark
@@ -24,7 +24,7 @@ export default function Footer({
 						<Icons.Mail className="h-6 w-6" />
 					</a>
 					<a
-						href="https://www.instagram.com/mv.mun/"
+						href="https://www.instagram.com/dublinmodelun/"
 						className={
 							"ml-6 text-gray-400 " +
 							(dark
@@ -45,27 +45,9 @@ export default function Footer({
 							/>
 						</svg>
 					</a>
+
 					<a
-						href="https://www.facebook.com/mvmodelun/"
-						className={
-							"ml-6 text-gray-400 " +
-							(dark
-								? "hover:text-gray-300"
-								: "hover:text-gray-500")
-						}
-					>
-						<span className="sr-only">Facebook</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							className="h-5 w-5"
-							fill="currentColor"
-							viewBox="0 0 24 24"
-						>
-							<path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />{" "}
-						</svg>
-					</a>
-					<a
-						href="https://discord.com/invite/5sN9WXa"
+						href="https://discord.gg/7ejqvpyxUm"
 						className={
 							"ml-6 text-gray-400 " +
 							(dark
@@ -91,15 +73,15 @@ export default function Footer({
 				</div>
 				<div className="mt-8 md:mt-0 md:order-1">
 					<p className="text-center text-base leading-6 text-gray-400 hidden md:block">
-						&copy; 2021 Monta Vista Model United Nations | Designed
-						by Jeffrey Meng
+						&copy; 2024 Dublin High Model United Nations | Designed
+						by Bardia Anvari and Jeffrey Meng
 					</p>
 					<div className="md:hidden">
 						<p className="text-center text-base leading-6 text-gray-400">
-							&copy; 2021 Monta Vista Model United Nations
+							&copy; 2024 Dublin High Model United Nations
 						</p>
 						<p className="text-center text-base leading-6 text-gray-400">
-							Designed by Jeffrey Meng
+							Designed by Bardia Anvari Jeffrey Meng
 						</p>
 					</div>
 				</div>

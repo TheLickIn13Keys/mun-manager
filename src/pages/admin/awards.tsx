@@ -314,9 +314,9 @@ export default function AboutPage(): React.ReactElement {
 								disabled={!hasChanges}
 								className={
 									(hasChanges
-										? "bg-indigo-200 hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:ring-indigo-500 active:bg-indigo-200 "
-										: "bg-indigo-100") +
-									" inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-700 transition ease-in-out duration-150"
+										? "bg-blue-200 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:ring-blue-500 active:bg-blue-200 "
+										: "bg-blue-100") +
+									" inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 transition ease-in-out duration-150"
 								}
 							>
 								{hasChanges
@@ -330,8 +330,8 @@ export default function AboutPage(): React.ReactElement {
 									disabled={!hasChanges}
 									className={
 										(hasChanges
-											? "bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
-											: "bg-indigo-300") +
+											? "bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
+											: "bg-blue-300") +
 										" inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white transition ease-in-out duration-150"
 									}
 								>
@@ -357,7 +357,7 @@ export default function AboutPage(): React.ReactElement {
 									type={"text"}
 									onChange={(e) => setName(e.target.value)}
 									id="edit-conference-name"
-									className="focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+									className="focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
 								/>
 							</div>
 							<p className="mt-2 text-sm text-gray-500">
@@ -379,7 +379,7 @@ export default function AboutPage(): React.ReactElement {
 									onChange={(d) => setEndDate(d[0])}
 									id={"edit-conference-end-date"}
 									type={"date"}
-									className="focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+									className="focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
 									options={{
 										dateFormat: "F j, Y",
 									}}
@@ -406,7 +406,7 @@ export default function AboutPage(): React.ReactElement {
 									}
 									type={"text"}
 									id="edit-conference-imageurl"
-									className=" focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+									className=" focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
 									placeholder={"Must include https://"}
 								/>
 							</div>
@@ -459,7 +459,7 @@ export default function AboutPage(): React.ReactElement {
 									}
 									type={"text"}
 									id="edit-conference-delegation-award"
-									className=" focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+									className=" focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
 								/>
 							</div>
 						</div>
@@ -491,7 +491,7 @@ export default function AboutPage(): React.ReactElement {
 										}}
 										id={"edit-conference-award-" + i}
 										rows={3}
-										className="focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+										className="focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
 									/>
 								</div>
 							</div>
@@ -511,7 +511,7 @@ export default function AboutPage(): React.ReactElement {
 					<button
 						type="button"
 						onClick={() => setShowSpotlightView((o) => !o)}
-						className="mt-1 mb-10 w-full items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:ring-indigo-500 active:bg-indigo-200 transition ease-in-out duration-150"
+						className="mt-1 mb-10 w-full items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:ring-blue-500 active:bg-blue-200 transition ease-in-out duration-150"
 					>
 						{showSpotlightView
 							? "Preview in Normal Mode"

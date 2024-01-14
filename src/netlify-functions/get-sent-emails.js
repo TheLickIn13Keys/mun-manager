@@ -61,7 +61,7 @@ export async function handler(event, context) {
 			.update(email.toLowerCase())
 			.digest("hex");
 		const memberInfo = await axios.get(
-			"https://us11.api.mailchimp.com/3.0/lists/3bb1f12a14/members/" +
+			"https://us11.api.mailchimp.com/3.0/lists/1b24e05585/members/" +
 				emailHash,
 			{
 				auth: {

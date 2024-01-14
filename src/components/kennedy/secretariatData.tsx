@@ -12,7 +12,7 @@ function ExpandableBio({
 			{pre}
 			<button
 				className={
-					"py-3 my-2 md:my-1 md:py-1 px-4 md:px-1 rounded-md bg-indigo-500 active:bg-indigo-600 md:active:bg-white md:bg-white md:underline text-indigo-50 md:text-indigo-500 active:text-indigo-800"
+					"py-3 my-2 md:my-1 md:py-1 px-4 md:px-1 rounded-md bg-blue-500 active:bg-blue-600 md:active:bg-white md:bg-white md:underline text-blue-50 md:text-blue-500 active:text-blue-800"
 				}
 				onFocus={(e) => e.target.blur()}
 				onClick={() => setExpanded((old) => !old)}

@@ -149,7 +149,7 @@ export default function InputGroup({
 					id={id}
 					type={"text"}
 					className={cx(
-						"shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md",
+						"shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md",
 						disabled ? "bg-gray-100" : "bg-white",
 						invalid &&
 							"pr-10 border-red-300 text-red-900 placeholder-red-300 focus:border-red-300 focus:ring-red-500",

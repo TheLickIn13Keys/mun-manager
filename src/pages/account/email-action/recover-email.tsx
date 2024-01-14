@@ -21,7 +21,7 @@ export default function RecoverAccountPage(): React.ReactElement {
 					If your account was hacked, and you can no longer sign in,
 					please{" "}
 					<a
-						href="mailto:support@montavistamun.com?subject=my%20email%20was%20changed%20without%20my%20knowledge"
+						href="mailto:dublinhighmodelun@gmail.com?subject=my%20email%20was%20changed%20without%20my%20knowledge"
 						className="link"
 					>
 						email us
@@ -98,10 +98,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								expired. If you believe this is an error, please
 // 								email{" "}
 // 								<a
-// 									href="mailto:support@montavistamun.com"
+// 									href="mailto:dublinhighmodelun@gmail.com"
 // 									className="link"
 // 								>
-// 									support@montavistamun.com
+// 									dublinhighmodelun@gmail.com
 // 								</a>
 // 								.
 // 							</>
@@ -122,10 +122,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								disabled. If you believe this is an error,
 // 								please email{" "}
 // 								<a
-// 									href="mailto:support@montavistamun.com"
+// 									href="mailto:dublinhighmodelun@gmail.com"
 // 									className="link"
 // 								>
-// 									support@montavistamun.com
+// 									dublinhighmodelun@gmail.com
 // 								</a>
 // 								.
 // 							</>
@@ -138,10 +138,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								deleted. If you believe this is an error, please
 // 								email{" "}
 // 								<a
-// 									href="mailto:support@montavistamun.com"
+// 									href="mailto:dublinhighmodelun@gmail.com"
 // 									className="link"
 // 								>
-// 									support@montavistamun.com
+// 									dublinhighmodelun@gmail.com
 // 								</a>
 // 								.
 // 							</>
@@ -153,10 +153,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								{error.message} <br />
 // 								If this was unexpected, please email{" "}
 // 								<a
-// 									href="mailto:support@montavistamun.com"
+// 									href="mailto:dublinhighmodelun@gmail.com"
 // 									className="link"
 // 								>
-// 									support@montavistamun.com
+// 									dublinhighmodelun@gmail.com
 // 								</a>
 // 								.
 // 							</>
@@ -193,7 +193,7 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 					<Link
 // 						to={"/account/login"}
 // 						className={
-// 							"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo-500 active:bg-indigo-700"
+// 							"mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white transition duration-150 ease-in-out bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring-blue-500 active:bg-blue-700"
 // 						}
 // 					>
 // 						Log In

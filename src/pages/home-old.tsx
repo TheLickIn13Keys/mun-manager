@@ -10,7 +10,7 @@ function IndexPage(): React.ReactElement {
 
 	return (
 		<Layout
-			title={"Monta Vista Model United Nations"}
+			title={"Dublin High Model United Nations"}
 			navbarShadow="always"
 			formatTitle={false}
 		>

@@ -52,7 +52,7 @@ export default function VerticalSteps({
 									"-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full " +
 									(i < maxSwitchableStep - 1 ||
 									i === currentStep - 1
-										? "bg-indigo-600"
+										? "bg-blue-600"
 										: i <
 										  maxSwitchableStep /* because the line is attached to the element before*/
 										? "bg-gray-400"
@@ -87,12 +87,12 @@ export default function VerticalSteps({
 											? "bg-white border-2 "
 											: "") +
 										(i < maxSwitchableStep
-											? "border-indigo-600 "
+											? "border-blue-600 "
 											: "") +
 										(i < currentStep ||
 										(i < maxSwitchableStep &&
 											i !== currentStep)
-											? "bg-indigo-600 group-hover:bg-indigo-800 group-focus:bg-indigo-800 "
+											? "bg-blue-600 group-hover:bg-blue-800 group-focus:bg-blue-800 "
 											: "") +
 										(i > currentStep
 											? "border-gray-300 " +
@@ -106,7 +106,7 @@ export default function VerticalSteps({
 									i < maxSwitchableStep ? (
 										<Icons.Check className="w-5 h-5 text-white" />
 									) : i === currentStep ? (
-										<span className="h-2.5 w-2.5 bg-indigo-600 rounded-full"></span>
+										<span className="h-2.5 w-2.5 bg-blue-600 rounded-full"></span>
 									) : i > currentStep &&
 									  i <= maxSwitchableStep ? (
 										<span className="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300 group-focus:bg-gray-300 transition ease-in-out duration-150"></span>
