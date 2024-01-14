@@ -9,3 +9,6 @@
 
 Commits to the master branch are automatically built by netlify.
 A local production build can also be created with `$ yarn build`.
+
+
+Big thanks to: https://github.com/jeffreymeng/montavistamun
