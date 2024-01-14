@@ -53,7 +53,7 @@ export async function handler(event, context) {
 			.digest("hex");
 		const existingFields = await axios
 			.get(
-				`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
+				`https://us9.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
 				{},
 				{
 					auth: {
@@ -97,7 +97,7 @@ export async function handler(event, context) {
 			...newData,
 		};
 		await axios.put(
-			`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
+			`https://us9.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}`,
 			data,
 			{
 				auth: {
@@ -113,7 +113,7 @@ export async function handler(event, context) {
 				.digest("hex");
 		}
 		await axios.post(
-			`https://us11.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`,
+			`https://us9.api.mailchimp.com/3.0/lists/${listID}/members/${emailHash}/tags`,
 			{
 				tags: [
 					{

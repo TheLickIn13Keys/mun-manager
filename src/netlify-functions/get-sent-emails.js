@@ -61,7 +61,7 @@ export async function handler(event, context) {
 			.update(email.toLowerCase())
 			.digest("hex");
 		const memberInfo = await axios.get(
-			"https://us11.api.mailchimp.com/3.0/lists/1b24e05585/members/" +
+			"https://us9.api.mailchimp.com/3.0/lists/1b24e05585/members/" +
 				emailHash,
 			{
 				auth: {
@@ -72,7 +72,7 @@ export async function handler(event, context) {
 		);
 		console.log(memberInfo);
 		const resp = await axios.get(
-			`https://us11.api.mailchimp.com/3.0/campaigns?count=${count}&sort_field=send_time&member_id=${emailHash}&sort_dir=DESC&status=sent&fields=campaigns.id,campaigns.long_archive_url,campaigns.send_time,campaigns.settings.subject_line,campaigns.settings.preview_text,campaigns.settings.title,total_items&offset=${
+			`https://us9.api.mailchimp.com/3.0/campaigns?count=${count}&sort_field=send_time&member_id=${emailHash}&sort_dir=DESC&status=sent&fields=campaigns.id,campaigns.long_archive_url,campaigns.send_time,campaigns.settings.subject_line,campaigns.settings.preview_text,campaigns.settings.title,total_items&offset=${
 				count * (page - 1)
 			}`,
 			{
