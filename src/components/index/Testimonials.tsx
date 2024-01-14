@@ -21,7 +21,7 @@ function Testimonial({
 	return (
 		<section className="w-full py-8 overflow-hidden md:py-12 lg:py-18">
 			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<svg
+				{/* <svg
 					className="absolute top-full right-full transform translate-x-1/3 -translate-y-1/4 lg:translate-x-1/2 xl:-translate-y-1/2"
 					width={404}
 					height={404}
@@ -30,7 +30,7 @@ function Testimonial({
 					role="img"
 					aria-labelledby="svg-workcation"
 				>
-					{/* <defs>
+					<defs>
 						<pattern
 							id="ad119f34-7694-4c31-947f-5c9d249b21f3"
 							x={0}
@@ -48,13 +48,13 @@ function Testimonial({
 								fill="currentColor"
 							/>
 						</pattern>
-					</defs> */}
+					</defs>
 					<rect
 						width={404}
 						height={404}
 						fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"
 					/>
-				</svg>
+				</svg> */}
 				<div className="relative">
 					<blockquote className="mt-10">
 						<div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-white">
