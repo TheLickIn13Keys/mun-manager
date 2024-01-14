@@ -91,7 +91,7 @@ export default function CreatePage({
 		<AuthLayout
 			title={"Join DHSMUN"}
 			description={
-				"Dublin High Model United Nations is a close-knit club and community that strives to provide experiences in teamwork, negotiation, and diplomacy by simulating the United Nations during engaging conferences. Join Dublin High Model UN today to start your MUN journey!"
+				"Dublin High Model United Nations is an awesome community where you get to have fun while going to conferences, winning awards, and learning about the nuances of international politics. Join Dublin High Model UN today to start your MUN journey!"
 			}
 		>
 			{done ? (
@@ -650,7 +650,7 @@ export default function CreatePage({
 
 								<div className="mt-6">
 									<p className="mt-2 text-sm text-gray-500">
-										You must be a MVHS student to join.
+										You must be a DHS student to join.
 									</p>
 									<p className="mt-2 text-sm text-gray-500">
 										When you create your DHSMUN account, you
