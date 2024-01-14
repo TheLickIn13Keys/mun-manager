@@ -143,12 +143,12 @@ export default function CreatePage({
 						<br />
 						{discordClicked && "✓ "}
 						<a
-							href={"https://discord.gg/5sN9WXa"}
+							href={"https://discord.gg/7ejqvpyxUm"}
 							onClick={(e) => {
 								e.preventDefault();
 								setDiscordClicked(true);
 								window.open(
-									"https://discord.gg/5sN9WXa",
+									"https://discord.gg/7ejqvpyxUm",
 									"_blank"
 								);
 							}}
