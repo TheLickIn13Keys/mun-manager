@@ -21,7 +21,7 @@ export default function RecoverAccountPage(): React.ReactElement {
 					If your account was hacked, and you can no longer sign in,
 					please{" "}
 					<a
-						href="mailto:dublinhighmodelun@gmail.com?subject=my%20email%20was%20changed%20without%20my%20knowledge"
+						href="mailto:dublinmodelun@gmail.com ?subject=my%20email%20was%20changed%20without%20my%20knowledge"
 						className="link"
 					>
 						email us
@@ -98,10 +98,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								expired. If you believe this is an error, please
 // 								email{" "}
 // 								<a
-// 									href="mailto:dublinhighmodelun@gmail.com"
+// 									href="mailto:dublinmodelun@gmail.com "
 // 									className="link"
 // 								>
-// 									dublinhighmodelun@gmail.com
+// 									dublinmodelun@gmail.com 
 // 								</a>
 // 								.
 // 							</>
@@ -122,10 +122,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								disabled. If you believe this is an error,
 // 								please email{" "}
 // 								<a
-// 									href="mailto:dublinhighmodelun@gmail.com"
+// 									href="mailto:dublinmodelun@gmail.com "
 // 									className="link"
 // 								>
-// 									dublinhighmodelun@gmail.com
+// 									dublinmodelun@gmail.com 
 // 								</a>
 // 								.
 // 							</>
@@ -138,10 +138,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								deleted. If you believe this is an error, please
 // 								email{" "}
 // 								<a
-// 									href="mailto:dublinhighmodelun@gmail.com"
+// 									href="mailto:dublinmodelun@gmail.com "
 // 									className="link"
 // 								>
-// 									dublinhighmodelun@gmail.com
+// 									dublinmodelun@gmail.com 
 // 								</a>
 // 								.
 // 							</>
@@ -153,10 +153,10 @@ export default function RecoverAccountPage(): React.ReactElement {
 // 								{error.message} <br />
 // 								If this was unexpected, please email{" "}
 // 								<a
-// 									href="mailto:dublinhighmodelun@gmail.com"
+// 									href="mailto:dublinmodelun@gmail.com "
 // 									className="link"
 // 								>
-// 									dublinhighmodelun@gmail.com
+// 									dublinmodelun@gmail.com 
 // 								</a>
 // 								.
 // 							</>

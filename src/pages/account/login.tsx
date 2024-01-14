@@ -232,10 +232,10 @@ export default function LoginPage({
 															<a
 																className="link"
 																href={
-																	"mailto:dublinhighmodelun@gmail.com"
+																	"mailto:dublinmodelun@gmail.com "
 																}
 															>
-																dublinhighmodelun@gmail.com
+																dublinmodelun@gmail.com 
 															</a>
 														</p>
 													);
@@ -254,13 +254,13 @@ export default function LoginPage({
 																at{" "}
 																<a
 																	href={
-																		"mailto:dublinhighmodelun@gmail.com"
+																		"mailto:dublinmodelun@gmail.com "
 																	}
 																	className={
 																		"text-blue-500 active:text-blue-700 hover:underline"
 																	}
 																>
-																	dublinhighmodelun@gmail.com
+																	dublinmodelun@gmail.com 
 																</a>
 																.
 															</p>

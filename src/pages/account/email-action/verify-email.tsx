@@ -75,10 +75,10 @@ export default function HandleEmailActionPage({
 								for was disabled. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>
@@ -91,10 +91,10 @@ export default function HandleEmailActionPage({
 								for was deleted. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>
@@ -106,10 +106,10 @@ export default function HandleEmailActionPage({
 								{error.message} <br />
 								If this was unexpected, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>

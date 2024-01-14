@@ -216,10 +216,10 @@ export default function CreatePage({
 									Remember to check your spam folder. If you
 									still don't see it, send us an email at{" "}
 									<a
-										href="mailto:dublinhighmodelun@gmail.com"
+										href="mailto:dublinmodelun@gmail.com "
 										className="link"
 									>
-										dublinhighmodelun@gmail.com
+										dublinmodelun@gmail.com 
 									</a>
 									.
 								</p>
@@ -421,13 +421,13 @@ export default function CreatePage({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:dublinhighmodelun@gmail.com"
+																	"mailto:dublinmodelun@gmail.com "
 																}
 																className={
 																	"link"
 																}
 															>
-																dublinhighmodelun@gmail.com
+																dublinmodelun@gmail.com 
 															</a>
 															.
 														</p>

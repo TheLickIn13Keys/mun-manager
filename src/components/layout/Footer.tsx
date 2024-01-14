@@ -12,7 +12,7 @@ export default function Footer({
 					<p className={"text-gray-400 mr-6"}>Contact Us:</p>
 
 					<a
-						href="mailto:dublinhighmodelun@gmail.com"
+						href="mailto:dublinmodelun@gmail.com "
 						className={
 							"text-gray-400 " +
 							(dark

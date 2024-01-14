@@ -94,10 +94,10 @@ export default function SendEmailVerificationPage({
 														was unexpected, please
 														email{" "}
 														<a
-															href="mailto:dublinhighmodelun@gmail.com"
+															href="mailto:dublinmodelun@gmail.com "
 															className="link"
 														>
-															dublinhighmodelun@gmail.com
+															dublinmodelun@gmail.com 
 														</a>
 														.
 													</>

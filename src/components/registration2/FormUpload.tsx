@@ -202,7 +202,7 @@ export default function FormUpload<Data>({
 									break;
 								case "storage/quota-exceeded":
 									onError(
-										"Sorry, but our server has run out of space for your file. Please email us at dublinhighmodelun@gmail.com and let us know."
+										"Sorry, but our server has run out of space for your file. Please email us at dublinmodelun@gmail.com  and let us know."
 									);
 									break;
 								case "storage/invalid-checksum":
@@ -217,7 +217,7 @@ export default function FormUpload<Data>({
 									break;
 								default:
 									onError(
-										"An unknown error occurred. Please try again or email us at dublinhighmodelun@gmail.com"
+										"An unknown error occurred. Please try again or email us at dublinmodelun@gmail.com "
 									);
 							}
 						},

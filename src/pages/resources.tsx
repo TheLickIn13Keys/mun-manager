@@ -59,7 +59,7 @@ export default function ResourcesPage(): React.ReactElement {
 							days after your first member meeting of the year. If
 							you've already attended a meeting this year, please{" "}
 							<a
-								href="mailto:dublinhighmodelun@gmail.com"
+								href="mailto:dublinmodelun@gmail.com "
 								className="link"
 							>
 								send us an email

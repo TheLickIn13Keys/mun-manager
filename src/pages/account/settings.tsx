@@ -441,13 +441,13 @@ function PersonalInformationDisplay() {
 									If this was unexpected, please email us at{" "}
 									<a
 										href={
-											"mailto:dublinhighmodelun@gmail.com"
+											"mailto:dublinmodelun@gmail.com "
 										}
 										className={
 											"text-blue-500 active:text-blue-700 hover:underline"
 										}
 									>
-										dublinhighmodelun@gmail.com
+										dublinmodelun@gmail.com 
 									</a>
 									.
 								</p>
@@ -750,13 +750,13 @@ function ChangePasswordModal({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:dublinhighmodelun@gmail.com"
+																	"mailto:dublinmodelun@gmail.com "
 																}
 																className={
 																	"text-blue-500 active:text-blue-700 hover:underline"
 																}
 															>
-																dublinhighmodelun@gmail.com
+																dublinmodelun@gmail.com 
 															</a>
 															.
 														</p>
@@ -1077,13 +1077,13 @@ function ChangeEmailModal({
 															email us at{" "}
 															<a
 																href={
-																	"mailto:dublinhighmodelun@gmail.com"
+																	"mailto:dublinmodelun@gmail.com "
 																}
 																className={
 																	"text-blue-500 active:text-blue-700 hover:underline"
 																}
 															>
-																dublinhighmodelun@gmail.com
+																dublinmodelun@gmail.com 
 															</a>
 															.
 														</p>

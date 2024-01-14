@@ -76,10 +76,10 @@ export default function HandleEmailActionPage({
 								for was disabled. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>
@@ -92,10 +92,10 @@ export default function HandleEmailActionPage({
 								for was deleted. If you believe this is an
 								error, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>
@@ -107,10 +107,10 @@ export default function HandleEmailActionPage({
 								{error.message} <br />
 								If this was unexpected, please email{" "}
 								<a
-									href="mailto:dublinhighmodelun@gmail.com"
+									href="mailto:dublinmodelun@gmail.com "
 									className="link"
 								>
-									dublinhighmodelun@gmail.com
+									dublinmodelun@gmail.com 
 								</a>
 								.
 							</>
@@ -181,13 +181,13 @@ export default function HandleEmailActionPage({
 														please email us at{" "}
 														<a
 															href={
-																"mailto:dublinhighmodelun@gmail.com"
+																"mailto:dublinmodelun@gmail.com "
 															}
 															className={
 																"text-blue-500 active:text-blue-700 hover:underline"
 															}
 														>
-															dublinhighmodelun@gmail.com
+															dublinmodelun@gmail.com 
 														</a>
 														.
 													</p>
