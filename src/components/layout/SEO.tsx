@@ -56,7 +56,7 @@ function SEO({
 	);
 
 	const metaDescription = description || site.siteMetadata.description;
-	const imageUrl = `https://montavistamun.com/images/logo-banner.jpg`;
+	const imageUrl = `https://dublinhsmun.netlify.app/images/logo-banner.jpg`;
 	return (
 		// not an actual error
 		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
